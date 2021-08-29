@@ -33,4 +33,5 @@ function register(){
 //funcion para abrir otra ventana del repositorio
 function logear(){
     window.open('../index.html');
+    window.close('../login.html');
 }
