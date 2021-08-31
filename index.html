@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="Estilos/estilosIndex.css">
 </head>
+
 <body>
     <!--Pagina principal
     Todo lo q hagan cambios dejar un comentario y antes de ponerce a editar extraer los datos del git haciendo pull-->
@@ -20,25 +22,56 @@
 
     </header>
 
-    <div id="General">
-        <div>
-            <!--Daniela-->
-
-
+    <!--Daniela-->
+    <main>
+        <div id="General">
+            <div id="image1">
+                <img src="">
+            </div>
+            <div id="general1">
+                <form action="post" class="layout-conteiner">
+                    <h1>Encuentra tu Lugar</h1>
+                    <div id="filtros">
+                        <div id="filtro">
+                            <ul id="opciones">
+                                <li id="alquilar">
+                                    <button id="activar" type="button" value="2">Alquilar</button>
+                                </li>
+                                <li id="comprar">
+                                    <button id="activar1" type="button" value="1">Comprar</button>
+                                </li>
+                                <li id="proyectos">
+                                    <button id="activar2" type="button" value="2">Proyectos</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tipo">
+                            <label id="propiedad">
+                                <select id="propiedades">
+                                    <option value="2">Departamento</option>
+                                    <option value="1">Casa</option>
+                                    <option value="9">Suite</option>
+                                    <option value="3">Terreno/Lote</option>
+                                    <option value="4">Oficina comercial</option>
+                                    <option value="5">Local Comercial</option>
+                                    <option value="6">Hacienda/Quinta</option>
+                                    <option value="8">Bodega</option>
+                                    <option value="Otros">Todos</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div id="buscador" style="position: relative;">
+                            <input aria-placeholder="Buscar por palabra clave" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" autocomplete="nope" placeholder="Ingrese ubicacion o caracteristica" role="combobox" type="text" class="caracteristica" value>
+                        </div>
+                        <div id="aplicar">
+                            <button type="submit" id="busqueda">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
     <footer>
 
@@ -47,4 +80,5 @@
 
     <script src="JavaScript/scriptIndex.js"></script>
 </body>
+
 </html>
