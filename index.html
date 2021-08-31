@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +11,137 @@
     <title>Document</title>
     <link rel="stylesheet" href="Estilos/estilosIndex.css">
 </head>
+
 <body>
     <!--Pagina principal
     Todo lo q hagan cambios dejar un comentario y antes de ponerce a editar extraer los datos del git haciendo pull-->
 
-    <header>
         <!--Landa-->
+        <header class="encabezado">
+            <nav>
+                <div><img src="Imagenes/principal/logo-plusvalia.svg" alt=""> </div>
+                
+                <ul>
+                    <li><a href="#">Estado</a>
+                        <ul>
+                            <li><a href="#">Pichincha</a></li>
+                            <li><a href="#">Guayas</a></li>
+                            <li><a href="#">Azuay</a></li>
+                            <li><a href="#">Manabí</a></li>
+                            <li><a href="#">Santa Elena</a></li>
+                            <li><a href="#">Esmeraldas</a></li>
+                            <li><a href="#">Imbabura</a></li>
+                            <li><a href="#">Chimborazo</a></li>
+                            <li><a href="#">El Oro</a></li>
+                            <li><a href="#">Tungurahua</a></li>
+                            <li><a href="#">Santo Domingo</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Tipo de propiedad</a>
+                        <ul>
+                            <li><a href="#">Casa</a></li>
+                            <li><a href="#">Departamento</a></li>
+                            <li><a href="#">Terreno/Lote</a></li>
+                            <li><a href="#">Oficina comercial</a></li>
+                            <li><a href="#">Suite</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Habitaciones</a>
+                        <ul>
+                            <li><a href="#">3 habitaciones</a></li>
+                            <li><a href="#">4 habitaciones</a></li>
+                            <li><a href="#">2 habitaciones</a></li>
+                            <li><a href="#">Oficina comercial</a></li>
+                            <li><a href="#">Suite</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Características</a>
+                        <ul>
+                            <li><a href="#">1 o más baños</a></li>
+                            <li><a href="#">2 o más baños</a></li>
+                            <li><a href="#">1 o más estacionamientos</a></li>
+                            <li><a href="#">2 o más estacionamientos</a></li>
+                            <li><a href="#">A estrenar</a></li>
+                            <li><a href="#">Hasta 5 años</a></li>
+                            <li><a href="#">Closets</a></li>
+                            <li><a href="#">Guardianía/Seguridad privada</a></li>
+                            <li><a href="#">Jardín(es)</a></li>
+                        </ul> 
+                    </li>
+
+                    <li>
+                        <a href="#">Proyectos</a>
+                        <ul>
+                            <li><a href="#"><b>ETAPA</b></a></li><br>
+                            <li><a href="#">En planos</a></li>
+                            <li><a href="#">En construcción</a></li>
+                            <li><a href="#">Pre-venta</a></li>
+                            <li><a href="#">En cualquier etapa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="main-container">
+                    <a href="#" class="btn btn-green">Publicar</a>
+                    <a href="#" class="btn btn-green">Ingresar</a>
+                    
+                </div>
+
+            </nav>
+        </header>
 
 
-    </header>
+   
 
-    <div id="General">
-        <div>
-            <!--Daniela-->
-
-
+    <!--Daniela-->
+    <main>
+        <div id="General">
+            <div id="image1">
+                <img src="">
+            </div>
+            <div id="general1">
+                <form action="post" class="layout-conteiner">
+                    <h1>Encuentra tu Lugar</h1>
+                    <div id="filtros">
+                        <div id="filtro">
+                            <ul id="opciones">
+                                <li id="alquilar">
+                                    <button id="activar" type="button" value="2">Alquilar</button>
+                                </li>
+                                <li id="comprar">
+                                    <button id="activar1" type="button" value="1">Comprar</button>
+                                </li>
+                                <li id="proyectos">
+                                    <button id="activar2" type="button" value="2">Proyectos</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tipo">
+                            <label id="propiedad">
+                                <select id="propiedades">
+                                    <option value="2">Departamento</option>
+                                    <option value="1">Casa</option>
+                                    <option value="9">Suite</option>
+                                    <option value="3">Terreno/Lote</option>
+                                    <option value="4">Oficina comercial</option>
+                                    <option value="5">Local Comercial</option>
+                                    <option value="6">Hacienda/Quinta</option>
+                                    <option value="8">Bodega</option>
+                                    <option value="Otros">Todos</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div id="buscador" style="position: relative;">
+                            <input aria-placeholder="Buscar por palabra clave" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" autocomplete="nope" placeholder="Ingrese ubicacion o caracteristica" role="combobox" type="text" class="caracteristica" value>
+                        </div>
+                        <div id="aplicar">
+                            <button type="submit" id="busqueda">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
     <footer>
 
@@ -47,4 +150,5 @@
 
     <script src="JavaScript/scriptIndex.js"></script>
 </body>
+
 </html>
