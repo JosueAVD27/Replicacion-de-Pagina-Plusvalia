@@ -1,10 +1,14 @@
-
-/*listas despegables*/*{
+*{
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+/*=============================================================================================================================*/
+/*SECCION HEADER*/
+/*LANDA*/
 .encabezado{
     background-color: #39adb6;
+    
 }
 .encabezado nav{
     display:flex;
@@ -17,17 +21,54 @@
     display: flex;
     justify-content: space-between;
 }
-a{
+
+.encabezado>nav>ul>li>a{
+    transition: all 300ms;
     text-decoration: none;
     font-size: 20px;
     color: white;
     padding: 12px 20px;
     display:block;
-
 }
-a:hover{
+
+.encabezado>nav>ul>li>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    display:block;
+}
+
+.encabezado>nav>ul>li>ul>li>p{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    display:block;
+}
+
+.encabezado>nav>ul>li>a:hover{
     background: rgb(44,44,44);
 }
+
+.encabezado>nav>ul>li>ul>li>a:hover{
+    background: rgb(44,44,44);
+}
+
+/*Mantener abierto el menu*/
+.encabezado>nav>ul>li:hover{
+    background: rgb(44,44,44);
+}
+.encabezado>nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.encabezado>nav>ul>li:hover>ul{
+    display: block;
+}
+
 .encabezado nav ul li ul{
     display: flex;
     flex-direction: column;
@@ -42,7 +83,6 @@ a:hover{
 .encabezado nav ul li:hover>ul{
     display: block;
 }
-
 
 /*Botones ingresar y publicar*/
 #main-container{
@@ -67,3 +107,94 @@ a:hover{
 .btn-green:active{
     background: wheat;
 }
+/*=============================================================================================================================*/
+/*SECCION MAIN*/
+/*DANIELA*/
+
+
+
+
+
+/*=============================================================================================================================*/
+/*SECCION SECCION1*/
+
+
+/*=============================================================================================================================*/
+/*SECCION SECCION2*/
+
+
+/*=============================================================================================================================*/
+/*SECCION SECCION3*/
+
+
+/*=============================================================================================================================*/
+/*SECCION SECCION4*/
+
+
+
+
+/*=============================================================================================================================*/
+/*SECCION FOOTER*/
+footer{
+    background-image: url('../Imagenes/General/footer1.jpg');
+}
+
+#footerGrande{
+    display: flex;
+    padding: 80px;
+    margin-top: 10px;
+    color: white;
+}
+
+#footerGrande>div{
+    width: 300%;
+}
+
+#footerGrande>div>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#footerGrande>div>a:hover{
+    color: rgb(209, 209, 209);
+}
+
+#footerGrande>div>div>a>i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+#footerPequeño {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+#footerPequeño>p>a{
+    color: teal;
+}
+
+#footerPequeño>p>a:hover{
+    color: rgb(0, 156, 156);
+}
+
+
+.icon{
+    color: white;
+    text-align: center;
+}
+
+.icon:hover{
+    color: rgb(173, 173, 173);
+}
+
+/*=============================================================================================================================*/

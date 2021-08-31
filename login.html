@@ -37,22 +37,19 @@
         <div class="login_registro">
             <!--formulario login-->
             <form class="formulario_login">
-                <h1>Login</h1>
+                <h1>Iniciar Sesión</h1>
                 <div class="contenedor">
                     <!--inputs con estilo e icuno agg desde una pagina externa-->
                     <div class="input-contenedor">
                         <i class="fas fa-envelope icon"></i>
-                        <input type="text" placeholder="Correo Electronico">
-                    </div>
-                    <div class="input-contenedor">
+                        <input type="email" required placeholder="Correo Electronico">
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" required placeholder="Contraseña">
+                        <br><br>
+                        <a class="check"><input type="checkbox"> ¿Recordar contraseña?</a>
+                        <input id="logear" type="submit" value="Ingresar" class="button">
                     </div>
-                    <br>
-                    <a class="check"><input type="checkbox"> ¿Recordar contraseña?</a>
-                    <input type="submit" value="Login" class="button" id="logear">
-
-                    <p>Has aceptado nuestras Condiciones de uso y Política de privacidad.</p>
+                    <p align="center">Has aceptado nuestras Condiciones de uso y Política de privacidad.</p>
                 </div>
             </form>
 
@@ -63,20 +60,14 @@
                     <!--inputs con estilo e icuno agg desde una pagina externa-->
                     <div class="input-contenedor">
                         <i class="fas fa-user icon"></i>
-                        <input type="text" placeholder="Nombre Completo">
-                    </div>
-
-                    <div class="input-contenedor">
+                        <input type="text" required placeholder="Nombre Completo">
                         <i class="fas fa-envelope icon"></i>
-                        <input type="text" placeholder="Correo Electronico">
-                    </div>
-
-                    <div class="input-contenedor">
+                        <input type="email" required placeholder="Correo Electronico">
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" required placeholder="Contraseña">
+                        <input type="submit" value="Registrate" class="button">
                     </div>
-                    <input type="submit" value="Registrate" class="button">
-                    <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                    <p align="center">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                 </div>
             </form>
         </div>

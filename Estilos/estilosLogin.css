@@ -105,6 +105,7 @@ main{
     color: rgb(136, 0, 0);
 }
 
+input[type="email"],
 input[type="text"],
 input[type="password"]{
     font-size: 20px;
@@ -117,11 +118,9 @@ input[type="password"]{
 }
 
 .check{
-
         padding: 10px;
         margin: 40px 20px 0px 20px;
-        outline: none;
-        
+        outline: none;    
 }
 
 .button{

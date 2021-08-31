@@ -13,6 +13,7 @@ var formulario_register = document.querySelector(".formulario_register");
 var login_trasero = document.querySelector(".login_trasero");
 var registro_trasero = document.querySelector(".registro_trasero");
 
+
 //funciones par los efectos del login
 function login(){
     formulario_register.style.display = "none";
@@ -32,6 +33,6 @@ function register(){
 
 //funcion para abrir otra ventana del repositorio
 function logear(){
-    window.open('../index.html');
-    window.close('../login.html');
+        window.open('../index.html');
+        window.close('../login.html');
 }
