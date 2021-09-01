@@ -39,6 +39,7 @@ footer{
     display: block;
     text-decoration: none;
     color: white;
+    font-size: 13px;
 }
 
 #footerGrande>div>a:hover{

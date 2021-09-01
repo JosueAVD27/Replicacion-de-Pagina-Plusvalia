@@ -97,7 +97,7 @@ main{
     font-size: 38px;
     text-align: center;
     margin-bottom: 20px;
-    color: #ff0000;
+    color: #8f0000b6;
 }
 
 .icon {
@@ -123,20 +123,38 @@ input[type="password"]{
         outline: none;    
 }
 
+/*Codigo botones principales*/
 .button{
-    border: none;
-    width: 80%;
-    color: white;
-    font-size: 20px;
-    background:  #520014;
-    padding: 15px 20px;
-    border-radius: 10px;
     cursor: pointer;
+    color: white;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    background: #8f0000b6;
+    border: 0.5px solid;
+    font: inherit;
+    line-height: 1;
+    border-radius: 50px;
+    --color: #8f0000b6;
+    --hover: #8f0000b6;
+    width: 80%;
+    font-size: 20px;
+    padding: 15px 20px;
     margin: 30px 35px;
 }
+
 .button:hover{
-    background:  #b9002e;
+    border-color: var(--hover);
+    color: white;
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+    box-shadow: 0 0 0 0.7em rgba(255, 255, 255, 0);
 }
+
+@keyframes  pulse{
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
 
 .formulario_login{
     opacity: 1;
