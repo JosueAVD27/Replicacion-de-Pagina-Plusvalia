@@ -1,3 +1,4 @@
+//Nadie me toca esta hoja xd
 //Ejecuta las acciones de las funciones
 document.getElementById("btn_registrar").addEventListener("click", register);
 document.getElementById("btn_iniciarsesion").addEventListener("click", login);

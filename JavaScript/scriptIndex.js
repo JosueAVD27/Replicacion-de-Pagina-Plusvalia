@@ -1,5 +1,4 @@
 //Ejecuta las acciones de las funciones
-document.getElementById("login").addEventListener("click", logear);
 document.getElementById("btn_propiedades").addEventListener("click", propiedades);
 
 //Seccion 4
@@ -28,12 +27,6 @@ var label_alquiler_menos = document.querySelector(".label_alquiler_menos");
 
 var label_zonas = document.querySelector(".label_zonas");
 var label_zonas_menos = document.querySelector(".label_zonas_menos");
-
-//funcion para abrir otra ventana del repositorio
-function logear(){
-    window.open('../login.html');
-    window.close('../index.html');
-}
 
 //funcion para ir a las propieades
 function propiedades(){

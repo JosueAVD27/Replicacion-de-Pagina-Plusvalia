@@ -1,0 +1,207 @@
+/*CABECERA - header*/
+/*=============================================================================================================================*/
+/*SECCION HEADER*/
+/*LANDA*/
+.encabezado {
+    background-color: #39adb6;
+
+}
+
+.encabezado nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.encabezado nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado>nav>ul>li>a {
+    transition: all 300ms;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.encabezado>nav>ul>li>ul>li>a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.encabezado>nav>ul>li>ul>li>p {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.encabezado>nav>ul>li>a:hover {
+    background: rgb(44, 44, 44);
+}
+
+.encabezado>nav>ul>li>ul>li>a:hover {
+    background: rgb(44, 44, 44);
+}
+
+/*Mantener abierto el menu*/
+.encabezado>nav>ul>li:hover {
+    background: rgb(44, 44, 44);
+}
+
+.encabezado>nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.encabezado>nav>ul>li:hover>ul {
+    display: block;
+}
+
+.encabezado nav ul li ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado nav ul li ul {
+    position: absolute;
+    background: #39adb6;
+}
+
+.encabezado nav ul li ul {
+    display: none;
+}
+
+.encabezado nav ul li:hover>ul {
+    display: block;
+}
+
+/*Botones ingresar y publicar*/
+#main-container {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    color: white;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    background: #8f0000b6;
+    font: inherit;
+    line-height: 1;
+    --color: #ffa260;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-publicar {
+    color: white;
+    background: rgb(16, 111, 255);
+}
+
+.btn-publicar:hover {
+    box-shadow: 0em 0em 0.5em 0.3em #60b2ff;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+.btn-publicar:active {
+    background: rgb(179, 235, 245);
+}
+
+.btn-ingresar {
+    color: white;
+    background: rgb(255, 72, 16);
+}
+
+.btn-ingresar:hover {
+    box-shadow: 0em 0em 0.5em 0.3em #ffb560;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+.btn-ingresar:active {
+    background: rgb(245, 214, 179);
+}
+
+
+/*PIE DE PAGINA - footer*/
+/*=============================================================================================================================*/
+/*SECCION FOOTER*/
+footer {
+    background-image: url('../Imagenes/General/footer1.jpg');
+}
+
+#footerGrande {
+    display: flex;
+    padding: 80px;
+    margin-top: 10px;
+    color: white;
+}
+
+#footerGrande>div {
+    width: 300%;
+}
+
+#footerGrande>div>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+#footerGrande>div>a:hover {
+    color: rgb(209, 209, 209);
+}
+
+#footerGrande>div>div>a>i {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+#footerPequeño {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+#footerPequeño>p>a {
+    color: teal;
+}
+
+#footerPequeño>p>a:hover {
+    color: rgb(0, 156, 156);
+}
+
+
+.icon {
+    color: white;
+    text-align: center;
+}
+
+.icon:hover {
+    color: rgb(173, 173, 173);
+}
+
+/*=============================================================================================================================*/

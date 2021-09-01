@@ -1,0 +1,1 @@
+/*No usar etiquetas unicas para dar estilos, prioricen usar las class o id*/

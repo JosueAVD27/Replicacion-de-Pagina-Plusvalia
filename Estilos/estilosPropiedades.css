@@ -1,12 +1,9 @@
+/*No usar etiquetas unicas para dar estilos, prioricen usar las class o id*/
 *{
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-/*=============================================================================================================================*/
-/*SECCION HEADER*/
-
-
 
 /*=============================================================================================================================*/
 /*SECCION FORMULARIOS*/
@@ -18,68 +15,4 @@
 
 
 
-/*=============================================================================================================================*/
-/*SECCION FOOTER*/
-footer{
-    background-image: url('../Imagenes/General/footer1.jpg');
-}
-
-#footerGrande{
-    display: flex;
-    padding: 80px;
-    margin-top: 10px;
-    color: white;
-}
-
-#footerGrande>div{
-    width: 300%;
-}
-
-#footerGrande>div>a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-}
-
-#footerGrande>div>a:hover{
-    color: rgb(209, 209, 209);
-}
-
-#footerGrande>div>div>a>i{
-    font-size: 50px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-
-#footerPequeño {
-    width: 100%;
-    text-align: center;
-    background: transparent;
-    opacity: 0.9;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    font-size: 14px;
-    box-shadow: 0px 0px 3px gray;
-}
-
-#footerPequeño>p>a{
-    color: teal;
-}
-
-#footerPequeño>p>a:hover{
-    color: rgb(0, 156, 156);
-}
-
-
-.icon{
-    color: white;
-    text-align: center;
-}
-
-.icon:hover{
-    color: rgb(173, 173, 173);
-}
 /*=============================================================================================================================*/
