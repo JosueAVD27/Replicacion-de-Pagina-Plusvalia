@@ -143,6 +143,7 @@
 /*SECCION FOOTER*/
 footer {
     background-image: url('../Imagenes/General/footer1.jpg');
+    color: white;
 }
 
 #footerGrande {

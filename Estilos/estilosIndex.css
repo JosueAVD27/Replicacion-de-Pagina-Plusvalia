@@ -19,16 +19,21 @@ section {
 }
 
 /*SECCION SECCION1*/
+
 .secion1 {
     display: grid;
     padding: 150px 0;
     text-align: center;
     justify-content: center;
+    background-image: url('../Imagenes/Index/main.png');
+    background-position: center;
+    background-repeat: repeat repeat;
 }
 
 .secion1>h2 {
     font-size: 30px;
     width: 650px;
+    padding-bottom: 10px;
 }
 
 .secion1>button {
@@ -51,6 +56,9 @@ section {
     border-radius: 50px;
     --color: #6e7bef;
     --hover: #c66eef;
+    box-shadow: 0em 0em 0.5em 0.3em #6e7bef;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
 }
 
 .verPropiedades:hover {
@@ -76,6 +84,7 @@ section {
 }
 
 .seccion2>h3 {
+    padding-top: 30px;
     padding-bottom: 20px;
     font-weight: normal;
     justify-content: center;
@@ -123,7 +132,7 @@ section {
 }
 
 #imags {
-    width: 345px;
+    width: 385px;
     height: 250px;
     border-radius: 15px;
 }

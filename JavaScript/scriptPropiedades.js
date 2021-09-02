@@ -1,11 +1,24 @@
 /*No usar etiquetas unicas para dar estilos, prioricen usar las class o id*/
+/*Aqui pueden poner lo que quieran pero ordenado y comentado para saber que hacer*/
+
+const btnIzquierdo = document.querySelector("#btn-izquierda");
+const btnDerecha = document.querySelector("#btn-derecha");
 
 const slider = document.querySelector("#deslizar");
 let sliderSection = document.querySelectorAll(".deslizar-section");
+
 let sliderSectionLast = sliderSection[sliderSection.length -1];
-const btnIzquierdo = document.querySelector("#btn-izquierda");
-const btnDerecha = document.querySelector("#btn-derecha");
+
 slider.insertAdjacentElement("afterbegin", sliderSectionLast);
+
+//Botones 
+btnDerecha.addEventListener("click", function() {
+    deslizarDerecha();
+});
+
+btnIzquierdo.addEventListener("click", function() {
+    deslizarIzquierda();
+});
 
 //Funcion para deslizar las imganes hacia la derecha
 function deslizarDerecha() {
@@ -32,12 +45,5 @@ function deslizarIzquierda() {
     }, 500);
 }
 
-//Botones 
-btnDerecha.addEventListener("click", function() {
-    deslizarDerecha();
-});
 
-btnIzquierdo.addEventListener("click", function() {
-    deslizarIzquierda();
-});
 
