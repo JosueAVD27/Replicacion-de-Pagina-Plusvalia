@@ -8,6 +8,179 @@
 /*=============================================================================================================================*/
 /*SECCION MAIN*/
 /*DANIELA*/
+.principal{
+    width: 1000px; height: 500px;
+    font-family: Hind,sans-serif;
+    background-image: url(https://tpc.googlesyndication.com/simgad/2105519694319498767?);
+    margin: auto;
+}
+
+#contenedor {
+    position: relative;
+    top: 40px;
+    margin: 0px 3px;
+    border-radius: 20px;
+    margin-left: 200px;
+    width: 600px; height: 250px;
+    background-color:rgba(72,69,64,.5);
+}
+#header{
+    padding-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+#contenedor #operacion{
+    width: 600px; height: 60px;
+}
+#contenedor #operacion ul li {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    float: left;
+    background-color: transparent;
+}
+button{
+    background-color: transparent;
+    color: gray;
+    border-bottom-color: transparent;
+    border-color: transparent;
+    padding-top: 30px;
+    padding-left: 56px;
+}
+#boton1:hover{
+    color:#dededf
+ }
+#boton1{
+    margin: -40px;
+    margin-top: 5px;
+    width: 150px; height: 46px;
+    padding: 3px;
+    background-color:white;
+    border-radius: 22px 0px 0px 0px;   
+   
+}
+#boton2:hover{
+    color:#dededf
+ }
+#boton2{
+    margin-top: 5px;
+    margin-left: -20px;
+    width: 150px; height: 46px;
+    padding: 3px;
+    background-color:white;
+    border-radius: 0px 0px 0px 0px;   
+    justify-content: center;
+    align-items: center;
+}
+#boton3:hover{
+    color:#dededf
+ }
+#boton3{
+    margin-left: -60px;
+    margin-top: 5px;
+    width: 150px; height: 46px;
+    padding: 3px;
+    background-color:white;
+    border-radius: 0px 22px 0px 0px;  
+    justify-content: center;
+    align-items: center;
+}
+#precontenedor{
+    margin: -28.2px;
+    float:inline-end;
+    padding: 3px;
+    color: gray;
+    border-radius: 0px 0px 0px 0px;   
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#select {
+    margin-left: 44px;
+    min-width: 150px;
+    height: 47px;
+    padding: 10px;
+    border-radius: 0 0 0 22px;
+    text-indent: 1px;
+    color: gray;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff;
+}
+input{
+    padding: 10px;
+    margin-left: -5px;
+    width: 250px; height: 25.9px;
+    border: transparent;
+}
+#boton4{
+    padding: 15.99px;
+    margin-left: -61.9px;
+    width: 80px; height: 14.3px;
+    background-color:rgb(235, 93, 12);
+    border-radius: 0px 22px 22px 0px;   
+    
+}
+#boton4:hover{
+    color:#dededf
+ }
+#publicidad{
+    margin: 0 auto;
+    color: gray;
+    background-color:rgba(72,69,64,.5);
+    margin-top: 135px;
+    margin-left: 200px;
+    padding: 5px;
+    width: 440px; height: 60px;
+}
+background-logo {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(-100px);
+    border-radius: 5px;
+    background-color: rgba(47,56,51,0.5);
+    padding: 10px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+.background-logo .logo-img img {
+    width: auto;
+    height: auto;
+    min-height: 59px;
+    max-height: 59px;
+    margin-right: 15px;
+}
+.background-logo .logo-text {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    vertical-align: top;
+}
+#get-help {
+    float: right;
+    margin: -1px; 
+    color: #fff;
+    width: 170px; height: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #3a0c3d;
+    border-radius: 25px 25px 0 0;
+    font-weight: 100;
+    font-size: 14px;
+}
 
 
 
