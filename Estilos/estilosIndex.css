@@ -20,7 +20,7 @@
     top: 40px;
     margin: 0px 3px;
     border-radius: 20px;
-    margin-left: 200px;
+    margin-left: 260px;
     width: 600px; height: 250px;
     background-color:rgba(72,69,64,.5);
 }
@@ -41,10 +41,11 @@
     background-color: transparent;
 }
 button{
-    background-color: transparent;
-    color: gray;
+    cursor: pointer;
     border-bottom-color: transparent;
     border-color: transparent;
+    background-color: transparent;
+    color: gray;
     padding-top: 30px;
     padding-left: 56px;
 }
@@ -54,11 +55,13 @@ button{
 #boton1{
     margin: -40px;
     margin-top: 5px;
-    width: 150px; height: 46px;
+    width: 150px; height: 40px;
     padding: 3px;
     background-color:white;
-    border-radius: 22px 0px 0px 0px;   
-   
+    border-radius: 22px 0px 0px 0px;  
+    align-items: center;
+    display: flex;
+    justify-content: center; 
 }
 #boton2:hover{
     color:#dededf
@@ -66,12 +69,12 @@ button{
 #boton2{
     margin-top: 5px;
     margin-left: -20px;
-    width: 150px; height: 46px;
+    width: 150px; height: 40px;
     padding: 3px;
-    background-color:white;
-    border-radius: 0px 0px 0px 0px;   
-    justify-content: center;
+    background-color:white; 
     align-items: center;
+    display: flex;
+    justify-content: center; 
 }
 #boton3:hover{
     color:#dededf
@@ -79,19 +82,18 @@ button{
 #boton3{
     margin-left: -60px;
     margin-top: 5px;
-    width: 150px; height: 46px;
+    width: 150px; height: 40px;
     padding: 3px;
     background-color:white;
     border-radius: 0px 22px 0px 0px;  
-    justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center; 
 }
 #precontenedor{
     margin: -28.2px;
-    float:inline-end;
     padding: 3px;
     color: gray;
-    border-radius: 0px 0px 0px 0px;   
 }
 option {
     font-weight: normal;
@@ -102,23 +104,20 @@ option {
 }
 #select {
     margin-left: 44px;
-    min-width: 150px;
-    height: 47px;
+    width: 150px; height: 47.9px;
     padding: 10px;
     border-radius: 0 0 0 22px;
     text-indent: 1px;
     color: gray;
     text-overflow: ellipsis;
     cursor: pointer;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     appearance: none;
     background: #fff;
 }
 input{
     padding: 10px;
     margin-left: -5px;
-    width: 250px; height: 25.9px;
+    width: 250px; height: 26px;
     border: transparent;
 }
 #boton4{

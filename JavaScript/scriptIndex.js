@@ -74,3 +74,8 @@ function mostrarZonas(){
     label_zonas.style.display = "none";
     label_zonas_menos.style.display = "block";
 }
+
+//botones
+function onclick(event) {
+    mueve('avance')
+}
