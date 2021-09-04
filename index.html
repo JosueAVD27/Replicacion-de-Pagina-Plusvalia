@@ -99,85 +99,73 @@
     <!--=============================================================================================================================-->
     <!--Daniela-->
     <main>
-        <!--<img id="imagen2" src="https://tpc.googlesyndication.com/simgad/2105519694319498767" >
-        <img id="imagen3" src="https://img10.naventcdn.com/home/RPHOMv3.27.0-RC1/images/dfp-alquiler.jpg"
-        <img id="imagen1" src="https://img10.naventcdn.com/home/RPHOMv3.27.0-RC1/images/help-image-buy.jpg">-->
-    
-    <div class="principal">
+   
+    <div class="principal" id="principal">
         <div id="contenedor">
             <header id="header">
-                <h1>
-                    <p>Encuentra tu Lugar</p>
-                </h1>
+                <h1>Encuentra tu Lugar</h1>
             </header>
-            <div id="operacion">
-                <ul>
-                    <li>
-                        <button type="button1" value="1" onclick="('avance')">
-                            <div id="boton1">
-                                <p>Alquilar</p>
-                            </div>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button2" value="2">
-                            <div id="boton2">
-                                <p>Comprar</p>
-                            </div>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button3" value="3">
-                            <div id="boton3">
-                                <p>Proyectos</p>
-                            </div>
-                        </button>
-                    </li>
-                </ul>
+            <div class="operacion">
+                <div class="">
+                    <button onclick="Imag1()" id="btn_alquilar" class="boton1">Alquilar</button>
+                </div>
+                <div>
+                    <button onclick="Imag2()" id="btn_comprar" class="boton2">Comprar</button>
+                </div>
+                <div>
+                    <button onclick="Imag3()" id="btn_proyectos" class="boton3">Proyectos</button>
+                </div>
             </div>
-            <div id="precontenedor">
-                <label>
-                    <select id="select">
-                        <option value="">Departamento</option>
-                        <option value="">Casa</option>
-                        <option value="">Suite</option>
-                        <option value="">Terreno/Lote</option>
-                        <option value="">Oficina comercial</option>
-                        <option value="">Local Comercial</option>
-                        <option value="">Hacienda/Quinta</option>
-                        <option value="">Bodega</option>
-                        <option value="">Todos</option>
-                    </select>
-                </label>
-                <input aria-placeholder="Buscar por palabra clave" aria-autocomplete="both" aria-expanded="false"
-                    aria-haspopup="listbox" autocomplete="nope" placeholder="Ingrese ubicación o característica"
-                    role="combobox" type="text" value>
-                <button type="button4" value="4">
-                    <div id="boton4">
-                        <p>Buscar</p>
-                    </div>
-                </button>
+            <div class="precontenedor">
+                <div>
+                    <label>
+                        <select id="select">
+                            <option value="">Departamento</option>
+                            <option value="">Casa</option>
+                            <option value="">Suite</option>
+                            <option value="">Terreno / Lote</option>
+                            <option value="">Oficina comercial</option>
+                            <option value="">Local Comercial</option>
+                            <option value="">Hacienda / Quinta</option>
+                            <option value="">Bodega</option>
+                            <option value="">Todos</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <input class="buscador" aria-placeholder="Buscar por palabra clave" aria-autocomplete="both"
+                        aria-expanded="false" aria-haspopup="listbox" autocomplete="nope"
+                        placeholder="Ingrese ubicación o característica" role="combobox" type="text" value>
+                </div>
+                <div>
+                    <button class="boton4">Buscar</button>
+                </div>
+            
             </div>
         </div>
         </form>
-        <div id="publicidad">
-            <a id="logoContainer"
-                href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuApVz5RWW0aPKlTcKwc9d7ZMuMDbKZWP9ssQ4jjjAIz01FAv6d6K_4Wnytc2ShW9U9IoWdygqDBzdB-Ws7Gjsl1xX2VQG4VVKgy34THWE73a1uE2rdT84IbSeJhhoHvAB7iqKYhKrgtqtsdlq_tuGkvZ8zsISkNjDFfmX4JLMP-cjzjTUamNfdroNqpQvxzRbRh2x3m4-zJvSOMQaWieNqGeTBWz2-cBViI6enDpzR2FU1MAS7mvPHyabztyshpnLltMAlywO7KBZYu_QMKzKPbE3rhnnn2Ygga6YvzXLQCwH2yP7ErPj2ibALW1tUvCQJmuY3diEMfO2JHEy9-fg&amp;sai=AMfl-YSqgBkJ6RqAJpMbU0GyXwI5LBeKGfYf0dm2e0UM6DxEDYNLv_yjcArZ99ogKFAlCdixEE9V-lk-PAZm1he60-LVMQDoNjWQOxF0ZjCn5iKOCKEuzl2EefUkccmH4MkQJ8nvsw&amp;sig=Cg0ArKJSzFKOwl8F756lEAE&amp;fbs_aeid=[gw_fbsaeid]&amp;urlfix=1&amp;adurl=https://www.plusvalia.com/propiedades/edificio-perlazul-salinas-51172075.html"
-                target="_blank" class="background-logo" style="opacity: 1; transform: translateX(0px);">
-                <span class="logo-img">
-                    <img id="logo" src="https://tpc.googlesyndication.com/simgad/4550771447233941174?"
-                        alt="anunciante-logo">
+        <div class="publicidad">
+            <div>
+                <a href="">
+                    <img id="logo" src="https://tpc.googlesyndication.com/simgad/4550771447233941174?" alt="anunciante-logo">
+                </a>
+            </div>
+            <div>
+                <a href="">
                     <img id="logo" src="https://tpc.googlesyndication.com/simgad/12594741167198988503?">
-                </span>
-                <span class="logo-text">
-                    <span>Tu departamento frente al mar</span>
-                    <h5>Constructora Vintimilla</h5>
-                </span>
-            </a>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <p>Tu departamento frente al mar</p>
+                    <h4>Constructora Vintimilla</h4>
+                </a>
+            </div>
         </div>
         <div id="get-help" data-qa="help">
             <div class="get-help" data-qa="help">
-                <i class="icon-g icon-g-lupe"></i> <a href=""> ¿Podemos ayudarlo? </a>
+                <i class="fas fa-search icono">&nbsp;&nbsp;</i>
+                <a href="">¿Podemos ayudarlo? </a>
             </div>
         </div>
     </div>

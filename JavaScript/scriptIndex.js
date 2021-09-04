@@ -75,7 +75,15 @@ function mostrarZonas(){
     label_zonas_menos.style.display = "block";
 }
 
-//botones
-function onclick(event) {
-    mueve('avance')
+//Cambiar de imagenes
+function Imag1() {
+    document.getElementById('principal').style.backgroundImage='url(../Imagenes/Index/main2.jpg)';
+}
+
+function Imag2() {
+    document.getElementById('principal').style.backgroundImage='url(../Imagenes/Index/main3.jpg)';
+}
+
+function Imag3() {
+    document.getElementById('principal').style.backgroundImage='url(../Imagenes/Index/main4.jpg)';
 }

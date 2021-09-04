@@ -9,176 +9,197 @@
 /*SECCION MAIN*/
 /*DANIELA*/
 .principal{
-    width: 1000px; height: 500px;
+    width: auto; height: 550px;
     font-family: Hind,sans-serif;
-    background-image: url(https://tpc.googlesyndication.com/simgad/2105519694319498767?);
+    background-image: url('../Imagenes/Index/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
     margin: auto;
 }
 
 #contenedor {
     position: relative;
-    top: 40px;
+    display: grid;
+    top: 60px;
     margin: 0px 3px;
     border-radius: 20px;
-    margin-left: 260px;
-    width: 600px; height: 250px;
+    margin: auto;
+    width: 1050px; height: 50%;
     background-color:rgba(72,69,64,.5);
+    justify-content: center;
 }
+
 #header{
-    padding-top: 10px;
+    padding-top: 30px;
+    font-size: 20px;
     text-align: center;
     background-color: transparent;
     color: white;
 }
-#contenedor #operacion{
-    width: 600px; height: 60px;
-}
-#contenedor #operacion ul li {
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    float: left;
-    background-color: transparent;
-}
-button{
-    cursor: pointer;
-    border-bottom-color: transparent;
-    border-color: transparent;
-    background-color: transparent;
-    color: gray;
-    padding-top: 30px;
-    padding-left: 56px;
-}
-#boton1:hover{
-    color:#dededf
- }
-#boton1{
-    margin: -40px;
-    margin-top: 5px;
-    width: 150px; height: 40px;
-    padding: 3px;
-    background-color:white;
-    border-radius: 22px 0px 0px 0px;  
-    align-items: center;
+
+
+.precontenedor{
+    padding: 0;
+    margin: 0;
+    border: 0;
     display: flex;
-    justify-content: center; 
 }
-#boton2:hover{
-    color:#dededf
- }
-#boton2{
-    margin-top: 5px;
-    margin-left: -20px;
-    width: 150px; height: 40px;
-    padding: 3px;
-    background-color:white; 
-    align-items: center;
-    display: flex;
-    justify-content: center; 
+
+.precontenedor>div{
+    margin-bottom: 89px;
 }
-#boton3:hover{
-    color:#dededf
- }
-#boton3{
-    margin-left: -60px;
-    margin-top: 5px;
-    width: 150px; height: 40px;
-    padding: 3px;
-    background-color:white;
-    border-radius: 0px 22px 0px 0px;  
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-}
-#precontenedor{
-    margin: -28.2px;
-    padding: 3px;
-    color: gray;
-}
-option {
-    font-weight: normal;
-    display: block;
-    white-space: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-}
+
+/*Lista*/
 #select {
-    margin-left: 44px;
-    width: 150px; height: 47.9px;
+    width: 200px; 
+    height: 56px;
     padding: 10px;
     border-radius: 0 0 0 22px;
     text-indent: 1px;
-    color: gray;
-    text-overflow: ellipsis;
     cursor: pointer;
     appearance: none;
-    background: #fff;
-}
-input{
-    padding: 10px;
-    margin-left: -5px;
-    width: 250px; height: 26px;
-    border: transparent;
-}
-#boton4{
-    padding: 15.99px;
-    margin-left: -61.9px;
-    width: 80px; height: 14.3px;
-    background-color:rgb(235, 93, 12);
-    border-radius: 0px 22px 22px 0px;   
-    
-}
-#boton4:hover{
-    color:#dededf
- }
-#publicidad{
-    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    border-color: white;
+    border-right-color: gray;
+    font-size: 15px;
+    outline: none;
     color: gray;
-    background-color:rgba(72,69,64,.5);
-    margin-top: 135px;
-    margin-left: 200px;
-    padding: 5px;
-    width: 440px; height: 60px;
+    text-overflow: ellipsis;
 }
-background-logo {
-    position: absolute;
-    bottom: -100px;
-    opacity: 0;
-    transition: opacity 1s, transform 1s;
-    transform: translateX(-100px);
-    border-radius: 5px;
-    background-color: rgba(47,56,51,0.5);
-    padding: 10px;
-    padding-bottom: 8px;
-    text-decoration: none;
+
+
+
+/*buscador*/
+.buscador{
+    padding: 15px;
+    width: 450px; 
+    height: 26px;
+    border: transparent;
+    outline: none;
 }
-.background-logo .logo-img img {
-    width: auto;
-    height: auto;
-    min-height: 59px;
-    max-height: 59px;
-    margin-right: 15px;
-}
-.background-logo .logo-text {
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
+
+.boton4{
+    width: 150px; 
+    height: 55px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    appearance: none;
+    background-color: rgb(175, 30, 30);
+    border-radius: 0 22px 22px 0;
+    border: white;
     color: white;
-    vertical-align: top;
+    font-weight: bold;
 }
-#get-help {
-    float: right;
-    margin: -1px; 
-    color: #fff;
-    width: 170px; height: 46px;
+
+.boton4:hover{
+    background-color: rgb(228, 41, 41);
+}
+.operacion{
+    margin-top: 40px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 380px;
+}
+
+.boton1,
+.boton2,
+.boton3{
+    width: 150px; 
+    height: 55px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.boton1{
+    border-radius: 22px 0 0 0;
+    border: white;
+}
+
+.boton2{
+    border-radius: 0 0 0 0;
+    border: white;
+    box-shadow: 0px 0px 2px 0px gray;
+}
+
+.boton3{
+    border-radius: 0 22px 0 0;
+    border: white;
+    box-shadow: 0px 0px 2px 0px gray;
+}
+
+.boton1:focus,
+.boton2:focus,
+.boton3:focus{
+    background-color: white;
+}
+
+.boton1:hover,
+.boton2:hover,
+.boton3:hover{
+    background-color: white;
+}
+
+/*parte del logo*/
+.publicidad{
+    display: flex;
+    width: 500px;
+    height: 75px;
+    background-color:rgba(36, 34, 31, 0.678);
+    margin-top: 150px;
+    margin-left: 75px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.publicidad>div>a,
+.publicidad>div>a>p,
+.publicidad>div>a>h4{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 12px;
+    width: 110%;
+    padding: 0 5px;
+}
+
+.publicidad>div>a>img{
+    width: 90%;
+    height: 100%;
+}
+
+/*seccion de ayuda*/
+.get-help {
+    float: right;
+    color: #fff;
+    width: 200px; 
+    height: 46px;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     background: #3a0c3d;
     border-radius: 25px 25px 0 0;
-    font-weight: 100;
-    font-size: 14px;
+    font-size: 15px;
+    margin-right: 100px;
+    margin-top: -6px;
+
+}
+
+.icono{
+    color: red;
+}
+
+.get-help>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -199,7 +220,7 @@ section {
     justify-content: center;
     background-image: url('../Imagenes/Index/main.png');
     background-position: center;
-    background-repeat: repeat repeat;
+    background-repeat: repeat-x repeat-y;
 }
 
 .secion1>h2 {
