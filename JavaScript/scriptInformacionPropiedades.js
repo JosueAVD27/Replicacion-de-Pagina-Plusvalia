@@ -16,3 +16,15 @@ opcion.forEach(e => {
 
 });
 
+/*Daniela*/
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.carousel_lista'), {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        draggable: true,
+        arrows: {
+          prev: '.carousel_anterior',
+          next: '.carousel_siguiente'
+        }
+      });
+});

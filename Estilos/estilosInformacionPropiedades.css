@@ -82,3 +82,111 @@
     text-align: left;
     width: 100%; 
 }
+/*Daniela*/
+.desplegar{
+    padding: 10px 15px;
+}
+/*textos*/
+.desplegar h4{
+    letter-spacing: normal;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin: 22px;
+}
+.letra{
+    white-space: nowrap;
+    line-height: 22px;
+    color: #0a0b0c;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 100%;
+    margin: 10px;
+}
+.desplegar h3{
+    display: block;
+    height: 15px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(148, 145, 145);
+    margin: 10px;
+}
+.desplegar p{
+    white-space: nowrap;
+    line-height: 22px;
+    color: #7c98a7;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0px;
+    font-size: 100%;
+    margin: 10px;
+}
+.contenido {
+    color: #255f99;
+    font-size: 100%;
+    margin: 10px;
+}
+.logoletra{
+    color: green;
+}
+/*Contenedor*/
+.carousel_lista{
+    display: flex;
+    overflow: hidden;
+    padding: auto;
+}
+.carousel .carousel_contenedor .carousel_lista .carousel_elemento{
+    margin: 20px;
+    padding-bottom: 10px;
+    border: 1px #7c98a7 solid;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.logo{
+    width: 350px; height: 250px;
+    border-radius: 20px 20px 0px 0px;
+    padding: auto;
+    border-bottom: 1px #7c98a7 solid;
+}
+/*Botones*/
+.carousel_anterior{
+    transform: translateY(1400%);
+    position: absolute;
+    z-index: 50;
+    color: rgb(196, 21, 21);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #a31414;
+    font-size: 100%;
+    background-color: rgb(253, 253, 253);
+    top: 1px;
+    right: 1268px;
+    cursor: pointer;
+}
+.carousel_anterior:hover {
+    border: 1px solid rgb(16, 42, 158);
+    color: black;
+    background-color: rgb(124, 198, 228);
+}
+.carousel_siguiente{
+    transform: translateY(890%);
+    position: absolute;
+    color: rgb(196, 21, 21);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #a31414;
+    font-size: 100%;
+    background-color: #fff;
+    top: 190px;
+    right: 15px;
+    cursor: pointer;
+}
+.carousel_siguiente:hover {
+    border: 1px solid rgb(16, 42, 158);
+    color: black;
+    background-color: rgb(124, 198, 228);
+}
