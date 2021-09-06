@@ -92,50 +92,262 @@
     <!--=============================================================================================================================-->
 
     <div id="General">
-
+    
+        <aside class="Formulario_lateral">
+            <form action="#">
+                <div class="form_general">
+                    <div class="botones_arriba">
+                        <button onclick="" class="botones_1">Alquilar</button>
+                        <button onclick="" class="botones_2">Comprar</button>
+                        <button onclick="" class="botones_3">Proyectos</button>
+                    </div>
+                    <div class="titulo_form">
+                        <h4 class="ubicacion">Ubicacion</h4>
+                        <h4>Buscar en listado</h4>
+                        <i class="fas fa-search-location"></i>
+                    </div>
+    
+                    <input class="buscador" aria-placeholder="Buscar por palabra clave" aria-autocomplete="both"
+                        aria-expanded="false" aria-haspopup="listbox" autocomplete="nope"
+                        placeholder="Buscar por estado o zona." role="combobox" type="text" value>
+                    <button class="boton_mapa">Ver mapa <i class="fas fa-map-marker-alt"></i></button>
+    
+                    <h4>Tipo de inmueble</h4>
+    
+                    <div class="Contenedor_lista1">
+                        <div class="select1" id="select1">
+                            <div class="contenido_select1">
+                                <p>Selecciona el tipo de inmueble</p>
+                            </div>
+                            <i class="fas fa-chevron-down icon_lista1"></i>
+                        </div>
+                        <div class="opciones1" id="opciones1">
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Departamento</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Casa</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Terreno / Lote</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Local comercial</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Oficina comercial</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Suite</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Bodega-Galpon</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Consultorio</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Edificio-Hotel-Fabrica</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Habitacion</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Hacienda-Quinta</p>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion1">
+                                <div class="contenido_opcion1">
+                                    <p>Parqueadero</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <input type="hidden" name="lista1" id="inputSelect1" value="">
+    
+                    <h4>Habitaciones</h4>
+    
+                    <div class="lista_habitaciones">
+                        <div class="Contenedor_lista2">
+                            <div class="select2" id="select2">
+                                <div class="contenido_select2">
+                                    <p>Sin minimo</p>
+                                </div>
+                                <i class="fas fa-chevron-down icon_lista2"></i>
+                            </div>
+                            <div class="opciones2" id="opciones2">
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>Sin minimo</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>1 habitacion</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>2 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>3 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>4 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion2">
+                                    <div class="contenido_opcion2">
+                                        <p>5 habitaciones</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="hidden" name="lista2" id="inputSelect2" value="">
+    
+                        <div class="Contenedor_lista3">
+                            <div class="select3" id="select3">
+                                <div class="contenido_select3">
+                                    <p>Sin maximo</p>
+                                </div>
+                                <i class="fas fa-chevron-down icon_lista3"></i>
+                            </div>
+                            <div class="opciones3" id="opciones3">
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>Sin maximo</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>1 habitacion</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>2 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>3 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>4 habitaciones</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion3">
+                                    <div class="contenido_opcion3">
+                                        <p>5 habitaciones</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="hidden" name="lista3" id="inputSelect3" value="">
+                    </div>
+    
+                    <h4>Precio</h4>
+    
+                    <div class="Contenedor_lista4">
+                        <div class="select4" id="select4">
+                            <div class="contenido_select4">
+                                <p>Seleccionar precio</p>
+                            </div>
+                            <i class="fas fa-chevron-down icon_lista4"></i>
+                        </div>
+                        <div class="opciones4" id="opciones4">
+                            <div>
+                                <div class="contenido_opcion4">
+                                    <p>Desde <input type="text" name="" id=""></p>
+                                </div>
+    
+                                <div class="contenido_opcion4">
+                                    <p>Hasta <input type="text" name="" id=""></p>
+                                </div>
+                            </div>
+                            <div class="contenido_opcion4">
+                                <button>Ver resultados</button>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="lista4" id="inputSelect4" value="">
+                </div>
+                <div>
+            </form>
+        </aside>
+    
         <!--=============================================================================================================================-->
-        <div>
+        <section class="seccion">
             <!--Raquel-->
-            
+            <!--Articulo1-->
             <article class="articulo">
                 <!--Lado izquierdo del mini articulo, contiene las imagenes del bien inmueble-->
                 <div class="lado-izq">
-
+    
                     <!--Deslizador de imagenes del mini articulo-->
                     <div class="contenedor-deslizar">
                         <!--Galeria del mini articulo-->
                         <div class="deslizar" id="deslizar">
                             <div class="deslizar-section deslizar-section-estilo">
-                                <a href="     ">
+                                <a href="informacionPropiedad.html">
                                     <img src="Imagenes/propiedades/oficinas.jpg" alt="departamento1" class="deslizar-img">
                                 </a>
                             </div>
-
+    
                             <div class="deslizar-section deslizar-section-estilo">
-                                <a href="       ">
+                                <a href="informacionPropiedad.html">
                                     <img src="Imagenes/propiedades/ofi1.jpg" alt="departamento2" class="deslizar-img">
                                 </a>
                             </div>
-
+    
                             <div class="deslizar-section deslizar-section-estilo">
-                                <a href="       ">
+                                <a href="informacionPropiedad.html">
                                     <img src="Imagenes/propiedades/ofi2.jpg" alt="departamento3" class="deslizar-img">
                                 </a>
                             </div>
-
+    
                             <div class="deslizar-section deslizar-section-estilo">
-                                <a href="       ">
+                                <a href="informacionPropiedad.html">
                                     <img src="Imagenes/propiedades/ofi3.jpg" alt="departamento4" class="deslizar-img">
                                 </a>
-                            </div> 
+                            </div>
                         </div>
-
-                        <!--Direccionales de desalizamiento, izquierda y derecha-->  
+    
+                        <!--Direccionales de desalizamiento, izquierda y derecha-->
                         <div class="deslizar-btn deslizar-btn-der" id="btn-derecha">&#62;</div>
                         <div class="deslizar-btn deslizar-btn-izq" id="btn-izquierda">&#60;</div>
                     </div>
                 </div>
-
+    
                 <!--Lado Derecho del mini articulo con la información del bien inmueble-->
                 <div class="lado-der">
                     <div>
@@ -145,39 +357,45 @@
                                 <p class="destacado">Desde</p>
                                 <p class="precio">USD 76.605</p>
                             </div>
-                            
+    
                             <!--Parte superior centrada, Ubicación genral del lugar-->
                             <div class="up2">
                                 <h3>Calle Julio Alarcón Ayala y Alfonso Pereira </h3>
                                 <p class="destacado">Centro Norte, Quito</p>
                             </div>
-
+    
                             <!--Lado superio derecho, referencia del bien inmobiliario: Super destacado-->
                             <div class="up-des up3">
                                 <p class="destacado">Super Destacado</p>
                             </div>
                         </div>
-
+    
                         <!-- Zona del medio en donde van los iconos con las descrippciones del bien inmueble-->
                         <div>
                             <lo class="zona-medio">
                                 <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <polyline points="5 12 3 12 12 3 21 12 19 12" />
                                         <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
                                         <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                                    </svg>143 un. 
-
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    </svg>143 un.
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <polyline points="5 12 3 12 12 3 21 12 19 12" />
                                         <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
                                         <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                                     </svg>1 hab.
-                                
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-line-height" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-line-height"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <polyline points="3 8 6 5 9 8" />
                                         <polyline points="3 16 6 19 9 16" />
                                         <line x1="6" y1="5" x2="6" y2="19" />
@@ -188,18 +406,19 @@
                                 </li>
                             </lo>
                         </div>
-
+    
                         <!--Descripción de la ubicacion del citio-->
                         <div>
                             <h2>Zaigen -oficinas y Locales. Sector Plataforma Financiera, Centro Norte, Iñaquito</h2>
                         </div>
-
+    
                         <!--Descripción de la ubicacion del citio-->
                         <div>
-                            <p class="destacado">Ubicado en el corazón de la zona financiera de Quito, a un costado de la Plataformna Financiera y Complejo Turístico </p>
+                            <p class="destacado">Ubicado en el corazón de la zona financiera de Quito, a un costado de la
+                                Plataformna Financiera y Complejo Turístico </p>
                         </div>
                     </div>
-
+    
                     <!-- Parte inferior del mini articulo, aquí va el logo de las constructoras, el icno de corazón y el botón contactar-->
                     <div class="parte-inferior">
                         <div class="unir logo-construc">
@@ -208,32 +427,337 @@
                                     <img src="Imagenes/General/zaigen-alvares.png" alt="constructoras">
                                 </a>
                             </div>
-
+    
                         </div>
                         <!--Icono corazon-->
                         <div class="unir icono2">
                             <div>
-                                <button class="corazon"> <!-- Icono de corazón-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                <button class="corazon">
+                                    <!-- Icono de corazón-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                                     </svg>
                                 </button>
                             </div>
-                             <!-- Botón contactar -->
-                            <div> 
-                                <button class="contactar"><a href="   ">Contactar</a></button>
+                            <!--Whatssapp-->
+                            <div>
+                                <i class="fab fa-whatsapp whatsapp"></i>
+                            </div>
+    
+                            <!-- Botón contactar -->
+                            <div>
+                                <button class="contactar"><a href="#">Contactar</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
+            <!--Articulo2-->
+            <article class="articulo">
+                <!--Lado izquierdo del mini articulo, contiene las imagenes del bien inmueble-->
+                <div class="lado-izq">
+    
+                    <!--Deslizador de imagenes del mini articulo-->
+                    <div class="contenedor-deslizar">
+                        <!--Galeria del mini articulo-->
+                        <div class="deslizar" id="deslizar2">
+                            <div class="deslizar-section2 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi3.jpg" alt="departamento1" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section2 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi1.jpg" alt="departamento2" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section2 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi2.jpg" alt="departamento3" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section2 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/oficinas.jpg" alt="departamento4" class="deslizar-img">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!--Direccionales de desalizamiento, izquierda y derecha-->
+                        <div class="deslizar-btn deslizar-btn-der" id="btn-derecha2">&#62;</div>
+                        <div class="deslizar-btn deslizar-btn-izq" id="btn-izquierda2">&#60;</div>
+                    </div>
+                </div>
+    
+                <!--Lado Derecho del mini articulo con la información del bien inmueble-->
+                <div class="lado-der">
+                    <div>
+                        <!--Parte superior izquierda, descripcción del precio-->
+                        <div class="parte-superior">
+                            <div class="up1">
+                                <p class="destacado">Desde</p>
+                                <p class="precio">USD 76.605</p>
+                            </div>
+    
+                            <!--Parte superior centrada, Ubicación genral del lugar-->
+                            <div class="up2">
+                                <h3>Calle Julio Alarcón Ayala y Alfonso Pereira </h3>
+                                <p class="destacado">Centro Norte, Quito</p>
+                            </div>
+    
+                            <!--Lado superio derecho, referencia del bien inmobiliario: Super destacado-->
+                            <div class="up-des up3">
+                                <p class="destacado">Super Destacado</p>
+                            </div>
+                        </div>
+    
+                        <!-- Zona del medio en donde van los iconos con las descrippciones del bien inmueble-->
+                        <div>
+                            <lo class="zona-medio">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                    </svg>143 un.
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                    </svg>1 hab.
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-line-height"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="3 8 6 5 9 8" />
+                                        <polyline points="3 16 6 19 9 16" />
+                                        <line x1="6" y1="5" x2="6" y2="19" />
+                                        <line x1="13" y1="6" x2="20" y2="6" />
+                                        <line x1="13" y1="12" x2="20" y2="12" />
+                                        <line x1="13" y1="18" x2="20" y2="18" />
+                                    </svg>36 a 1055 m²
+                                </li>
+                            </lo>
+                        </div>
+    
+                        <!--Descripción de la ubicacion del citio-->
+                        <div>
+                            <h2>Zaigen -oficinas y Locales. Sector Plataforma Financiera, Centro Norte, Iñaquito</h2>
+                        </div>
+    
+                        <!--Descripción de la ubicacion del citio-->
+                        <div>
+                            <p class="destacado">Ubicado en el corazón de la zona financiera de Quito, a un costado de la
+                                Plataformna Financiera y Complejo Turístico </p>
+                        </div>
+                    </div>
+    
+                    <!-- Parte inferior del mini articulo, aquí va el logo de las constructoras, el icno de corazón y el botón contactar-->
+                    <div class="parte-inferior">
+                        <div class="unir logo-construc">
+                            <div>
+                                <a href="#">
+                                    <img src="Imagenes/General/zaigen-alvares.png" alt="constructoras">
+                                </a>
+                            </div>
+    
+                        </div>
+                        <!--Icono corazon-->
+                        <div class="unir icono2">
+                            <div>
+                                <button class="corazon">
+                                    <!-- Icono de corazón-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!--Whatssapp-->
+                            <div>
+                                <i class="fab fa-whatsapp whatsapp"></i>
+                            </div>
+                            <!-- Botón contactar -->
+                            <div>
+                                <button class="contactar"><a href="#">Contactar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    
+            <!--Articulo3-->
+            <article class="articulo">
+                <!--Lado izquierdo del mini articulo, contiene las imagenes del bien inmueble-->
+                <div class="lado-izq">
+    
+                    <!--Deslizador de imagenes del mini articulo-->
+                    <div class="contenedor-deslizar">
+                        <!--Galeria del mini articulo-->
+                        <div class="deslizar" id="deslizar3">
+                            <div class="deslizar-section3 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi2.jpg" alt="departamento1" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section3 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi1.jpg" alt="departamento2" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section3 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/ofi3.jpg" alt="departamento3" class="deslizar-img">
+                                </a>
+                            </div>
+    
+                            <div class="deslizar-section3 deslizar-section-estilo">
+                                <a href="informacionPropiedad.html">
+                                    <img src="Imagenes/propiedades/oficinas.jpg" alt="departamento4" class="deslizar-img">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!--Direccionales de desalizamiento, izquierda y derecha-->
+                        <div class="deslizar-btn deslizar-btn-der" id="btn-derecha3">&#62;</div>
+                        <div class="deslizar-btn deslizar-btn-izq" id="btn-izquierda3">&#60;</div>
+                    </div>
+                </div>
+    
+                <!--Lado Derecho del mini articulo con la información del bien inmueble-->
+                <div class="lado-der">
+                    <div>
+                        <!--Parte superior izquierda, descripcción del precio-->
+                        <div class="parte-superior">
+                            <div class="up1">
+                                <p class="destacado">Desde</p>
+                                <p class="precio">USD 76.605</p>
+                            </div>
+    
+                            <!--Parte superior centrada, Ubicación genral del lugar-->
+                            <div class="up2">
+                                <h3>Calle Julio Alarcón Ayala y Alfonso Pereira </h3>
+                                <p class="destacado">Centro Norte, Quito</p>
+                            </div>
+    
+                            <!--Lado superio derecho, referencia del bien inmobiliario: Super destacado-->
+                            <div class="up-des up3">
+                                <p class="destacado">Super Destacado</p>
+                            </div>
+                        </div>
+    
+                        <!-- Zona del medio en donde van los iconos con las descrippciones del bien inmueble-->
+                        <div>
+                            <lo class="zona-medio">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                    </svg>143 un.
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                    </svg>1 hab.
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-line-height"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7c98a7"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="3 8 6 5 9 8" />
+                                        <polyline points="3 16 6 19 9 16" />
+                                        <line x1="6" y1="5" x2="6" y2="19" />
+                                        <line x1="13" y1="6" x2="20" y2="6" />
+                                        <line x1="13" y1="12" x2="20" y2="12" />
+                                        <line x1="13" y1="18" x2="20" y2="18" />
+                                    </svg>36 a 1055 m²
+                                </li>
+                            </lo>
+                        </div>
+    
+                        <!--Descripción de la ubicacion del citio-->
+                        <div>
+                            <h2>Zaigen -oficinas y Locales. Sector Plataforma Financiera, Centro Norte, Iñaquito</h2>
+                        </div>
+    
+                        <!--Descripción de la ubicacion del citio-->
+                        <div>
+                            <p class="destacado">Ubicado en el corazón de la zona financiera de Quito, a un costado de la
+                                Plataformna Financiera y Complejo Turístico </p>
+                        </div>
+                    </div>
+    
+                    <!-- Parte inferior del mini articulo, aquí va el logo de las constructoras, el icno de corazón y el botón contactar-->
+                    <div class="parte-inferior">
+                        <div class="unir logo-construc">
+                            <div>
+                                <a href="#">
+                                    <img src="Imagenes/General/zaigen-alvares.png" alt="constructoras">
+                                </a>
+                            </div>
+    
+                        </div>
+                        <!--Icono corazon-->
+                        <div class="unir icono2">
+                            <div>
+                                <button class="corazon">
+                                    <!-- Icono de corazón-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!--Whatssapp-->
+                            <div>
+                                <i class="fab fa-whatsapp whatsapp"></i>
+                            </div>
+                            <!-- Botón contactar -->
+                            <div>
+                                <button class="contactar"><a href="#">Contactar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
 
-        </div>
+        </section>
         <!--=============================================================================================================================-->
-
-
-
+    
+    
+    
     </div>
 
     <!--=============================================================================================================================-->

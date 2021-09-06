@@ -66,6 +66,9 @@
 
 .encabezado>nav>ul>li:hover>ul {
     display: block;
+    position: absolute;
+    z-index: 201;
+
 }
 
 .encabezado nav ul li ul {
@@ -144,6 +147,9 @@
 footer {
     background-image: url('../Imagenes/General/footer1.jpg');
     color: white;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 #footerGrande {
