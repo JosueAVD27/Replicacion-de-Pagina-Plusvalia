@@ -1,446 +1,578 @@
-/*No usar etiquetas unicas para dar estilos, prioricen usar las class o id*/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-/*=============================================================================================================================*/
-/*Main*/
+<!DOCTYPE html>
+<html lang="es">
 
-.main_x{
-    display: block;
-    margin: 10px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Proyecto final">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="autor" content="Josue Velasquez, Daniela Gonzalez, Jonathan Landa y Raquel Garces">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="stylesheet" href="Estilos/estilosInformacionPropiedades.css">
+    <link rel="stylesheet" href="Estilos/estilosCOMUN.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    
+    <!--Enlace a pagina externa-->
+    <script src="https://kit.fontawesome.com/ac3de4dc61.js" crossorigin="anonymous"></script>
+</head>
 
-.main_x>div{
-    float: left;
-    padding: 10px;
-    border-radius: 10px;
-}
+<body>
+    <!--=============================================================================================================================-->
+    <header class="encabezado">
+        <nav>
+            <div><a href="index.html"><img src="Imagenes/principal/logo-plusvalia.svg" alt=""></a></div>
 
-.imag1>img{
-    width: auto;
-    height: 500px;
-    border-radius: 10px 0 0 10px;
-}
+            <ul>
+                <li><a href="#">Estado</a>
+                    <ul>
+                        <li><a href="">Pichincha</a></li>
+                        <li><a href="">Guayas</a></li>
+                        <li><a href="">Azuay</a></li>
+                        <li><a href="">Manabí</a></li>
+                        <li><a href="">Santa Elena</a></li>
+                        <li><a href="">Esmeraldas</a></li>
+                        <li><a href="">Imbabura</a></li>
+                        <li><a href="">Chimborazo</a></li>
+                        <li><a href="">El Oro</a></li>
+                        <li><a href="">Tungurahua</a></li>
+                        <li><a href="">Santo Domingo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tipo de propiedad</a>
+                    <ul>
+                        <li><a href="">Casa</a></li>
+                        <li><a href="">Departamento</a></li>
+                        <li><a href="">Terreno/Lote</a></li>
+                        <li><a href="">Oficina comercial</a></li>
+                        <li><a href="">Suite</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Habitaciones</a>
+                    <ul>
+                        <li><a href="">3 habitaciones</a></li>
+                        <li><a href="">4 habitaciones</a></li>
+                        <li><a href="">2 habitaciones</a></li>
+                        <li><a href="">Oficina comercial</a></li>
+                        <li><a href="">Suite</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Características</a>
+                    <ul>
+                        <li><a href="">1 o más baños</a></li>
+                        <li><a href="">2 o más baños</a></li>
+                        <li><a href="">1 o más estacionamientos</a></li>
+                        <li><a href="">2 o más estacionamientos</a></li>
+                        <li><a href="">A estrenar</a></li>
+                        <li><a href="">Hasta 5 años</a></li>
+                        <li><a href="">Closets</a></li>
+                        <li><a href="">Guardianía/Seguridad privada</a></li>
+                        <li><a href="">Jardín(es)</a></li>
+                    </ul>
+                </li>
 
-.imag3>img{
-    border-radius: 0 10px 0 0;
-}
+                <li>
+                    <a href="#">Proyectos</a>
+                    <ul>
+                        <li>
+                            <p><b>ETAPA</b></p>
+                        </li><br>
+                        <li><a href="">En planos</a></li>
+                        <li><a href="">En construcción</a></li>
+                        <li><a href="">Pre-venta</a></li>
+                        <li><a href="">En cualquier etapa</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="main-container">
+                <a href="#" class="btn btn-publicar">Publicar</a>
+                <a href="#" id="login" class="btn btn-ingresar">Ingresar</a>
+            </div>
 
-.imag5>img{
-    border-radius: 0 0 10px 0;
-}
+        </nav>
+    </header>
 
-.imag2>img,
-.imag3>img,
-.imag4>img,
-.imag5>img{
-    width: auto;
-    height: 238px;
-}
+    <!--=============================================================================================================================-->
+    <main>
+        <div class="main_x">
+            <div class="imag1">
+                <img id="logo" src="Imagenes/InformacionPropiedad/main1.jpg" alt="xd">
+            </div>
+            <div class="imag2">
+                <img id="logo" src="Imagenes/InformacionPropiedad/main2.jpg" alt="xd">
+            </div>
+            <div class="imag3">
+                <img id="logo" src="Imagenes/InformacionPropiedad/main3.jpg" alt="xd">
+            </div>
+            <div class="imag4">
+                <img id="logo" src="Imagenes/InformacionPropiedad/main4.jpg" alt="xd">
+            </div>
+            <div class="imag5">
+                <img id="logo" src="Imagenes/InformacionPropiedad/main5.jpg" alt="xd">
+            </div>
+        </div>
+    </main>
+    
+    <!--=============================================================================================================================-->
+    <!--Raquel-->
+    <aside class="fondocaja">
+
+        <!--Iconos-->
+       <div class="iconos_form">
+           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <circle cx="6" cy="12" r="3" />
+               <circle cx="18" cy="6" r="3" />
+               <circle cx="18" cy="18" r="3" />
+               <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+               <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+           </svg>
+       </div>
+       <div class="iconos_form">
+           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+             </svg>
+       </div>
+
+           <!--Precios-->
+       <div class="precio_condominios">
+                   <div class= minititulos><b>Venta</b> </div>
+                       <b>USD 800.000</b>
+                        <br>
+                       + USD 500 Condominio/Alicuota
+                   <div class= minititulos><b>Alquiler</b></div>
+                       <b>USD 4.500</b>
+                       <br>
+                       + USD 500 Condominio/Alicuota
+                  
+                   <div class= minititulos><b>Temporal/Vacacional</b></div>
+                       <b>USD 400</b>
+                       <br>
+                       +USD 500 Condominio/Alicuota
+       </div>
+
+       <!--Linea de división-->
+       <div class="division_linea"></div>
+       <!--Para ingresar los datos del formulario -->
+       <div id="formulario">
+           <form class="datos_form">
+               <h3 class="titulo_form">Mensaje al anunciante</h3>
+               <!--Ingresar el correo-->
+               <div class="datos_mensaje">
+                   <div class="ingreso_datos">
+                       <input id="input-email" type="text" name="email" inputmode="text" placeholder="Email" class="data" value="">
+                   </div> 
+               </div>
+               <!--Casillas de nombre y telefono-->
+               <div class="nombre_tlf">
+                   <div class="ingreso_datos">
+                       <input id="input-name" type="text" name="name" inputmode="text" placeholder="Nombre" class="data" value="">
+                   </div>
+                   <div class="ingreso_datos">
+                       <input id="input-phone" type="tel" name="phone" inputmode="text" placeholder="Teléfono" class="data" value="">
+                   </div>
+               </div>
+               <!--Casilla del mensaje-->
+               <div class="datos_mensaje">
+                   <div class="ingreso_datos">
+                       <label for="input-message" class="titulo-mensaje">Mensaje</label>
+                       <textarea id="input-message" type="text" name="message" inputmode="text" height="100" 
+                       class="contenido_msj">Hola, me interesa este inmueble que vi en plusvalía y quiero que me contacten. Gracias.</textarea>
+                   </div>
+               </div>
+              <!--Casilla para seleccionar-->
+               <div class="marcar_casilla">
+                   <label><input type="checkbox" id="cbox1" value="first_checkbox"> Quiero que me llamen</label><br>
+               </div>
+
+               <div class="enviarfor">
+                   <!--Boton de enviar formulario-->
+                   <button width="100%" font-weight="bold" class="presionar" style="margin-bottom: 8px;">Enviar formulario</button>
+                   <button width="100%" font-weight="bold" class="presionar" style="background-color: rgb(15, 153, 15);">
+                       Contactar por WhatsApp
+                       <img class="icono_wsp"
+                           src="https://img10.naventcdn.com/ficha/RPFICv5.13.2-RC1/whatsappIcon.26fa6c.svg">
+                   </button>
+                  
+               </div>
+               <!--Términos y condiciones y Políticas-->
+               <span class="termi_politic">Al enviar estás aceptando los
+                   <a href="http://help.plusvalia.com/es/articles/3512910-terminos-y-condiciones-de-uso">
+                       Términos y condiciones de Uso</a>
+                   <a href="http://help.plusvalia.com/es/articles/3512912-politica-de-privacidad">
+                       y la Política de Privacidad</a>
+               </span>
+           </form>
+       </div>
+
+   </aside>
+    <!--=============================================================================================================================-->
+    <section class="seccion1">
+
+    </section>
+    <!--=============================================================================================================================-->
+
+    <section class="seccion2">
+
+    </section>
+    <!--=============================================================================================================================-->
+    <section class="seccion3">
+
+    </section>
+
+    <!--=============================================================================================================================-->
+    <!--Landa-->
+    <section class="cont-menu">
+
+        <section class="cont-enlace">
+
+            <section class="opcion">
+                <p> Caracteristicas Generales </p>
+                <p class="icono"> + </p>
+            </section>
+
+            <section class="enlace">
+
+                <table class="primero">
+                    <tr>
+                        <td>Amueblado/a</td>
+                        <td>Piscina</td>
+                    </tr>
+                    <tr>
+                        <td>Ascensor(es)</td>
+                        <td>Terraza</td>
+                    </tr>
+                    <tr>
+                        <td>Condominio</td>
+                        <td>Baño de servicio</td>
+                    </tr>
+                    <tr>
+                        <td>Jardín(es)</td>
+                    </tr>
+                </table>
+            </section>
+
+        </section>
+
+        <section class="cont-enlace">
+
+            <section class="opcion">
+                <p> Servicios </p>
+                <p class="icono"> + </p>
+            </section>
+
+            <section class="enlace">
+                <table class="segundo">
+                    <tr>
+                        <td>Area de lavandería</td>
+                        <td>Puertas eléctricas</td>
+                    </tr>
+                    <tr>
+                        <td>Gimnasio</td>
+                        <td>Sistema de sonido</td>
+                    </tr>
+                    <tr>
+                        <td>Internet/Wifi</td>
+                        <td>Control de accesos</td>
+                    </tr>
+                    <tr>
+                        <td>Línea blanca</td>
+                        <td>Video vigilancia</td>
+                    </tr>
+                    <tr>
+                        <td>Aire acondicionado</td>
+                        <td>Sistema de alarma de seguridad</td>
+                    </tr>
+                    <tr>
+                        <td>Seguridad privad</td>
+                        <td>Calefón</td>
+                    </tr>
+                    <tr>
+                        <td>Parqueadero visitantes</td>
+                        <td>Persianas</td>
+                    </tr>
+                </table>
+            </section>
+
+        </section>
+
+        <section class="cont-enlace">
+
+            <section class="opcion">
+                <p> Ambientes </p>
+                <p class="icono"> + </p>
+            </section>
+
+            <section class="enlace">
+                <table class="tercero">
+                    <tr>
+                        <td>Area de cafetería</td>
+                        <td>Cuarto de juegos</td>
+                    </tr>
+                    <tr>
+                        <td>Area deportiva</td>
+                        <td>Hidromasaje</td>
+                    </tr>
+                    <tr>
+                        <td>Closets</td>
+                        <td>Sala de música y cine</td>
+                    </tr>
+                </table>
+            </section>
+
+        </section>
+
+        <section class="cont-enlace">
+
+            <section class="opcion">
+                <p> Exteriores </p>
+                <p class="icono"> + </p>
+            </section>
+
+            <section class="enlace">
+                <table class="cuarto">
+                    <tr>
+                        <td>Balcón</td>
+                        <td>Canchas</td>
+                    </tr>
+                </table>
+            </section>
+
+        </section>
+
+    </section>
+    <!--=============================================================================================================================-->
+    <!--Daniela-->
+    <div class="desplegar">
+        <div class="seleccion">
+            <h4>Más inmuebles como este</h4>
+        </div>
+        <div class="carousel">
+            <div class="carousel_contenedor">
+                <button aria-label="Anterior" class="carousel_anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel_lista">
+                    <div class="carousel_elemento">
+                        <img class="logo"
+                            src="Imagenes/InformacionPropiedad/foto1.jpg" alt="casa1">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra">USD 1.899.890</td>
+                            </tr>
+                        </table>
+                        <h3>Barrio Umiña</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>1072 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>5 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>9 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto2.jpg"
+                            alt="casa2">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 1.200</td>
+                            </tr>
+                        </table>
+                        <h3>Edificio Navegante</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>120 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>4 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>3 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto3.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 1.500</td>
+                            </tr>
+                        </table>
+                        <h3>Manta Beach</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>200 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>3 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>3 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto4.jpg"
+                            alt="casa4">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 1.200</td>
+                            </tr>
+                        </table>
+                        <h3>Barrio Umiña</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>135 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>3 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>3 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto5.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 900</td>
+                            </tr>
+                        </table>
+                        <h3>Ruta del Spondylus, Ciudad del Mar</h3>
+                        <p>Norte de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>135 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>3 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>2 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto6.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 2.500</td>
+                            </tr>
+                        </table>
+                        <h3>Manta</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>500 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>5 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>7 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto7.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 1.500</td>
+                            </tr>
+                        </table>
+                        <h3>Poseidon, Manta</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>130 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>2 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>2 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto1.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra" >USD 57.000</td>
+                            </tr>
+                        </table>
+                        <h3>Cantón Sucre</h3>
+                        <p>Norte de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>708 m<sup>2</sup></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="carousel_elemento">
+                        <img class="logo" src="Imagenes/InformacionPropiedad/foto2.jpg"
+                            alt="casa3">
+                        <table class="constructora">
+                            <tr>
+                                <td class="letra">USD 750</td>
+                            </tr>
+                        </table>
+                        <h3>Manta</h3>
+                        <p>Sur de Manta, Manta</p>
+                        <table class="contenido">
+                            <tr>
+                                <td><i class="far fa-building">&nbsp;&nbsp;</i>200 m<sup>2</sup></td>
+                                <td><i class="fas fa-door-open">&nbsp;&nbsp;</i>3 Hab.</td>
+                                <td><i class="fas fa-toilet">&nbsp;&nbsp;</i>3 Baños</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button aria-label="Siguiente" class="carousel_siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div role="tablist" class="carousel_indicadores"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <!--=============================================================================================================================-->
+    <footer id="footer">
+        <div id="footerGrande">
+            <div class="F_mas">
+                <h3>Ver mas...</h3><br>
+                <a href="#">Inmuebles en Ecuador</a><br>
+                <a href="#">Publicar tu inmueble</a><br>
+                <a href="#">Ayuda</a><br>
+                <a href="#">Mapa del sitio</a><br>
+                <a href="#">Publicidad</a><br>
+                <a href="#">Noticias</a><br>
+            </div>
+            <div class="F_anunciantes">
+                <h3>Anunciantes</h3><br>
+                <a href="#">Inmobiliarias</a><br>
+                <a href="#">Corredores</a><br>
+                <a href="#">Constructuras</a><br>
+            </div>
+            <div class="F_paises">
+                <h3>Países</h3><br>
+                <a href="#">Argentina</a><br>
+                <a href="#">Brasil</a><br>
+                <a href="#">Mexico</a><br>
+                <a href="#">Peru</a><br>
+                <a href="#">Venezuela</a><br>
+                <a href="#">Panama</a><br>
+            </div>
+            <div class="F_redes">
+                <div>
+                    <h3>Siguenos</h3><br>
+                    <a href=""><i class="fab fa-whatsapp-square icon"></i></a>
+                    <a href=""><i class="fab fa-facebook-square icon"></i></a>
+                    <a href=""><i class="fab fa-instagram-square icon"></i></a>
+                    <a href=""><i class="fab fa-youtube-square icon"></i></a>
+                </div>
+                <div>
+                    <h3>Apps</h3><br>
+                    <a href=""><i class="fab fa-app-store-ios icon"></i></a>
+                    <a href=""><i class="fab fa-google-play icon"></i></a>
+                    <a href=""><i class="fab fa-invision icon"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div id="footerPequeño">
+            <p>&copy; Derechos del autor</p>
+            <p>Más contenido y formación sobre desarrollo web en <a href="#">ESPE Universidad de las Fuerzas Armadas</a>
+            </p>
+        </div>
+    </footer>
 
 
-/*responsive*/
-@media screen and (min-width: 1400px){
-    .main_x{
-        margin: 10px;
-    }
-    .imag1>img{
-        width: 700px;
-        height: 500px;
-    }
+</body>
 
-    .imag2>img,
-    .imag3>img,
-    .imag4>img,
-    .imag5>img{
-    width: 350px;
-    height: 238px;
-    }
-}
-/*=============================================================================================================================*/
-/*Landa*/
-.cont-menu {
-    max-width: 40rem;
-    padding:2rem; 
-}
-
-.cont-menu .cont-enlace{
-    box-shadow: 0px 0px 2px 1px white;
-}
-
-/* Estilos para las opciones */
-.cont-menu .cont-enlace .opcion{
-    display: flex;
-    justify-content: space-between;
-    background-color: #009688;
-    color: white;
-    padding: 13px 15px;
-    font-size: 22px;
-    cursor: pointer;
-    user-select: none;
-}
-
-/* Estilos para el simbolo '+' */
-.cont-menu .cont-enlace .opcion .icono{
-    background-color: white;
-    color: #009688;
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    width: 26px;
-    border-radius: 5px;
-}
-
-/* Efecto para aparacer y desaparecer enlaces */
-.cont-menu .cont-enlace .enlace{
-    height: 0;
-    overflow: hidden;
-}
-
-.cont-menu .cont-enlace .animation{
-    height: 100%;
-}
-
-/* Estilos para los enlaces */
-.cont-menu .cont-enlace .enlace a{
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgba(0,0,0,.8);
-    background-color: white;
-}
-
-.cont-menu .cont-enlace .enlace a:hover{
-    background-color: #1a567e;
-    color: white;
-}
-/*tablas del menu acordeon*/
-.primero{
-    background-color: white;
-    text-align: left;
-    width: 100%;
-}
-.segundo{
-    background-color: white;
-    text-align: left;
-    width: 100%;
-}
-.tercero{
-    background-color: white;
-    text-align: left;
-    width: 100%;
-}
-.cuarto{
-    background-color: white;
-    text-align: left;
-    width: 100%; 
-}
-/*=============================================================================================================================*/
-/*Daniela*/
-.desplegar{
-    padding: 10px 15px;
-}
-/*textos*/
-.desplegar h4{
-    letter-spacing: normal;
-    font-size: 24px;
-    font-weight: 600;
-    color: #000;
-    margin: 22px;
-}
-.letra{
-    white-space: nowrap;
-    line-height: 22px;
-    color: #0a0b0c;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 10px;
-    font-size: 100%;
-    margin: 10px;
-}
-.desplegar h3{
-    display: block;
-    height: 15px;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 500;
-    color: rgb(148, 145, 145);
-    margin: 10px;
-}
-.desplegar p{
-    white-space: nowrap;
-    line-height: 22px;
-    color: #7c98a7;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 0px;
-    font-size: 100%;
-    margin: 10px;
-}
-.contenido {
-    color: #255f99;
-    font-size: 100%;
-    margin: 10px;
-}
-.logoletra{
-    color: green;
-}
-/*Contenedor*/
-.carousel_lista{
-    display: flex;
-    overflow: hidden;
-    padding: auto;
-}
-.carousel .carousel_contenedor .carousel_lista .carousel_elemento{
-    margin: 20px;
-    padding-bottom: 10px;
-    border: 1px #7c98a7 solid;
-    border-radius: 20px 20px 10px 10px;
-}
-
-.logo{
-    width: 350px; height: 250px;
-    border-radius: 20px 20px 0px 0px;
-    padding: auto;
-    border-bottom: 1px #7c98a7 solid;
-}
-/*Botones*/
-.carousel_anterior{
-    transform: translateY(1400%);
-    position: absolute;
-    z-index: 50;
-    color: rgb(196, 21, 21);
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 1px solid #a31414;
-    font-size: 100%;
-    background-color: rgb(253, 253, 253);
-    top: 1px;
-    right: 1268px;
-    cursor: pointer;
-}
-.carousel_anterior:hover {
-    border: 1px solid rgb(16, 42, 158);
-    color: black;
-    background-color: rgb(124, 198, 228);
-}
-.carousel_siguiente{
-    transform: translateY(890%);
-    position: absolute;
-    color: rgb(196, 21, 21);
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 1px solid #a31414;
-    font-size: 100%;
-    background-color: #fff;
-    top: 190px;
-    right: 15px;
-    cursor: pointer;
-}
-.carousel_siguiente:hover {
-    border: 1px solid rgb(16, 42, 158);
-    color: black;
-    background-color: rgb(124, 198, 228);
-}
-
-/*Raquel*/
-
-.fondocaja{
-    background: rgb(214, 235, 238);
-    width: 28%;
-    height: auto;/***/
-    text-align: center;
-    float: right;
-    margin: 30px;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.iconos_form{
-    float: right;
-    display: flex;
-    height: 50px;
-    width: 50px;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: #212121;
-}
-
-.precios_condominios {
-    box-sizing: border-box;
-    padding: 15px 24px;
-    justify-content: center;
-    border-radius: 20px 20px 0 0;
-    position: relative;
-    top: 13px;
-}
-
-.division_linea {
-    border-bottom: 1px solid rgb(187, 202, 212);
-    width: 90%;
-    display: flex;
-    margin: auto;
-    z-index: 1;
-    top: 4px;
-    position: relative;
-}
-
-.formulario {
-    background-color: lightgray;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-}
-
-.datos_form {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-}
-
-.titulo_form {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    margin: 10px 0px;
-}
-
-.datos_mensaje {
-    margin: 8px 0px;
-}
-
-.data {
-    position: relative;
-}
-
-.data {
-    border: 1px solid rgb(187, 202, 212);
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 12px;
-    height: 48px;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    outline: none;
-    transition: padding-top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    animation: 0s ease 0s 1 normal none running none !important;
-}
-
-.data:focus, .contenido_msj:focus {
-    border: 1px solid rgb(255, 85, 0);
-}
-
-.nombre_tlf {
-    margin: 8px 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.nombre_tlf {
-    margin-right: 4px;
-}
-
-.contenido_msj {
-    border: 1px solid rgb(187, 202, 212);
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-weight: 300;
-    padding: 30px 12px 12px;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    outline: none;
-    transition: padding-top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    font-size: 14px;
-    resize: none;
-    line-height: 20px;
-    height: 100px;
-    animation: 0s ease 0s 1 normal none running none !important;
-}
-
-.marcar_casilla {
-    width: 100%;
-    position: relative;
-    display: flex;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 25px;
-}
-
-.titulo-mensaje {
-    position: absolute;
-    top: 17px;
-    left: 12px;
-    font-weight: 500;
-    letter-spacing: normal;
-    word-spacing: normal;
-    color: rgb(147, 150, 151);
-    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    font-size: 12px;
-    transform: translateY(-10px);
-    animation: 0s ease 0s 1 normal none running none;
-}
-
-.enviarfor {
-    margin: 20px 0px 10px;
-}
-
-.presionar {
-    display: flex;
-    border-radius: 12px;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 0px 12px;
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(255, 94, 0);
-    color: white;
-    width: 100%;
-    line-height: 48px;
-}
-
-button {
-    outline: none;
-    border: none;
-    background: none;
-    padding: 0px;
-    cursor: pointer;
-}
-
-.icono_wsp {
-    margin-left: 10px;
-}
-
-.termi_politic {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: left;
-    color: rgb(0, 0, 0);
-}
-
-.termi_politic>a {
-    color: orange;
-}
+</html>
+<script src="JavaScript/scriptInformacionPropiedades.js"></script>
+    <script src="JavaScript/scriptCOMUN.js"></script>
