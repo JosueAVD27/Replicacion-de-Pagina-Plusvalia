@@ -136,7 +136,118 @@ function deslizarIzquierda3() {
     }, 500);
 }
 
+/*Seccion 4*/
+const btnIzquierdo4 = document.querySelector("#btn-izquierda4");
+const btnDerecha4 = document.querySelector("#btn-derecha4");
+
+const slider4 = document.querySelector("#deslizar4");
+let sliderSection4 = document.querySelectorAll(".deslizar-section4");
+
+let sliderSectionLast4 = sliderSection4[sliderSection4.length -1];
+
+slider4.insertAdjacentElement("afterbegin", sliderSectionLast4);
+
+//Botones 
+btnDerecha4.addEventListener("click", function() {
+    deslizarDerecha4();
+});
+
+btnIzquierdo4.addEventListener("click", function() {
+    deslizarIzquierda4();
+});
+
+//Funcion para deslizar las imganes hacia la derecha
+function deslizarDerecha4() {
+    let sliderSectionFirst4 = document.querySelectorAll(".deslizar-section4")[0];
+    slider4.style.marginLeft = "-200%";
+    slider4.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider4.style.transition = "none";
+        slider4.insertAdjacentElement("beforeend", sliderSectionFirst4);
+        slider4.style.marginLeft = "-100%";
+    }, 500);
+}
+
+//Funcion para deslizar las imganes hacia la izquierda
+function deslizarIzquierda4() {
+    let sliderSection4 = document.querySelectorAll(".deslizar-section4");
+    let sliderSectionLast4 = sliderSection4[sliderSection4.length -1];
+    slider4.style.marginLeft = "0";
+    slider4.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider4.style.transition = "none";
+        slider4.insertAdjacentElement("afterbegin", sliderSectionLast4);
+        slider4.style.marginLeft = "-100%";
+    }, 500);
+}
+
+/*Seccion 5*/
+const btnIzquierdo5 = document.querySelector("#btn-izquierda5");
+const btnDerecha5 = document.querySelector("#btn-derecha5");
+
+const slider5 = document.querySelector("#deslizar5");
+let sliderSection5 = document.querySelectorAll(".deslizar-section5");
+
+let sliderSectionLast5 = sliderSection5[sliderSection5.length -1];
+
+slider5.insertAdjacentElement("afterbegin", sliderSectionLast5);
+
+//Botones 
+btnDerecha5.addEventListener("click", function() {
+    deslizarDerecha5();
+});
+
+btnIzquierdo5.addEventListener("click", function() {
+    deslizarIzquierda5();
+});
+
+//Funcion para deslizar las imganes hacia la derecha
+function deslizarDerecha5() {
+    let sliderSectionFirst5 = document.querySelectorAll(".deslizar-section5")[0];
+    slider5.style.marginLeft = "-200%";
+    slider5.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider5.style.transition = "none";
+        slider5.insertAdjacentElement("beforeend", sliderSectionFirst5);
+        slider5.style.marginLeft = "-100%";
+    }, 500);
+}
+
+//Funcion para deslizar las imganes hacia la izquierda
+function deslizarIzquierda5() {
+    let sliderSection5 = document.querySelectorAll(".deslizar-section5");
+    let sliderSectionLast5 = sliderSection5[sliderSection5.length -1];
+    slider5.style.marginLeft = "0";
+    slider5.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider5.style.transition = "none";
+        slider5.insertAdjacentElement("afterbegin", sliderSectionLast5);
+        slider5.style.marginLeft = "-100%";
+    }, 500);
+}
+
 //funciones para la lista desplegable
+
+//Lista Bajo precio
+const changeIcon_bajoPrecio = document.querySelector('.icon_bajoPrecio');
+
+const opciones_bajoPrecio = document.querySelector('#opciones_bajoPrecio');
+const contenido_bajoPrecio = document.querySelector('#bajoPrecio .contenido_bajoPrecio');
+const input_bajoPrecio = document.querySelector('#input_bajoPrecio');
+
+bajoPrecio.addEventListener('click', () => {
+    opciones_bajoPrecio.classList.toggle('active');
+    changeIcon_bajoPrecio.classList.toggle('fa-chevron-up');
+});
+
+document.querySelectorAll('#opciones_bajoPrecio > .opcion_bajoPrecio').forEach((opcion_bajoPrecio) => {
+    opcion_bajoPrecio.addEventListener('click', (ebajoPrecio) => {
+        ebajoPrecio.preventDefault();
+        contenido_bajoPrecio.innerHTML = ebajoPrecio.currentTarget.innerHTML;
+        opciones_bajoPrecio.classList.toggle('active');
+        input_bajoPrecio.value = ebajoPrecio.currentTarget.querySelector('.contenido_opcion_bajoPrecio>p').innerText;
+    });
+});
 
 //Lista1
 const changeIcon = document.querySelector('.icon_lista1');
@@ -221,3 +332,24 @@ select4.addEventListener('click', () => {
         inputSelect4.value = e4.currentTarget.querySelector('.contenido_opcion4>p').innerText;
     });
 });*/
+
+//Lista Superficie
+const changeIcon_superficie = document.querySelector('.icon_superficie');
+
+const opciones_superficie = document.querySelector('#opciones_superficie');
+const contenido_superficie = document.querySelector('#superficie .contenido_superficie');
+const input_superficie = document.querySelector('#input_superficie');
+
+superficie.addEventListener('click', () => {
+    opciones_superficie.classList.toggle('active');
+    changeIcon_superficie.classList.toggle('fa-chevron-up');
+});
+
+document.querySelectorAll('#opciones_superficie > .opcion_superficie').forEach((opcion_superficie) => {
+    opcion_superficie.addEventListener('click', (e_superficie) => {
+        e_superficie.preventDefault();
+        contenido_superficie.innerHTML = e_superficie.currentTarget.innerHTML;
+        opciones_superficie.classList.toggle('active');
+        input_superficie.value = e_superficie.currentTarget.querySelector('.contenido_opcion_superficie>p').innerText;
+    });
+});

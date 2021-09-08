@@ -15,12 +15,11 @@
 .Formulario_lateral{
     background-color: white;
     width: 22%;
+    height: 1380px;/***/
     text-align: center;
     float: left;
     margin: 30px;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 2px #ccc;
 }
 
 .form_general{
@@ -125,7 +124,9 @@
 .Contenedor_lista1,
 .Contenedor_lista2,
 .Contenedor_lista3,
-.Contenedor_lista4{
+.Contenedor_lista4,
+.contenedor_bajoPrecio,
+.contenedor_superficie{
     width: 95%;
     margin: auto;
     padding: 1px 0;
@@ -156,7 +157,9 @@
 }
 
 .select2,
-.select3{
+.select3,
+.bajoPrecio,
+.superficie{
     font-size: 12px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 0 black;
@@ -173,6 +176,14 @@
     border: 2px solid transparent;
 }
 
+.bajoPrecio,
+.superficie{
+    border: 1px solid gray;
+    width: 80%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
 .select1.active,
 .select1:hover,
 .select2.active,
@@ -180,14 +191,20 @@
 .select3.active,
 .select3:hover,
 .select4.active,
-.select4:hover{
+.select4:hover,
+.bajoPrecio.active,
+.bajoPrecio:hover,
+.superficie:active,
+.superficie:hover{
     border: 1px solid tomato;
 }
 
 .select1>i,
 .select2>i,
 .select3>i,
-.select4>i{
+.select4>i,
+.bajoPrecio>i,
+.superficie>i{
     font-size: 12px;
     padding: 8px 0;
     color: rgb(0, 0, 0);
@@ -223,6 +240,28 @@
     display: none;
 }
 
+.opciones_bajoPrecio{
+    width: 12%;
+    background: white;
+    position: absolute;
+    overflow: auto;
+    z-index: 507;
+    display: none;
+    border: 1px solid rgb(163, 173, 207);
+    border-radius: 10px;
+}
+
+.opciones_superficie{
+    width: 20%;
+    background: white;
+    position: absolute;
+    overflow: auto;
+    z-index: 507;
+    display: none;
+    border: 1px solid rgb(163, 173, 207);
+    border-radius: 10px;
+}
+
 .opciones1.active,
 .opciones2.active,
 .opciones3.active{
@@ -230,7 +269,9 @@
     animation: fedeIn .3s forwards;
 }
 
-.opciones4.active{
+.opciones4.active,
+.opciones_bajoPrecio.active,
+.opciones_superficie.active{
     display: block;
     animation: fedeIn4 .3s forwards;
 }
@@ -238,7 +279,9 @@
 .contenido_opcion1,
 .contenido_opcion2,
 .contenido_opcion3,
-.contenido_opcion4{
+.contenido_opcion4,
+.contenido_opcion_bajoPrecio,
+.contenido_opcion_superficie{
     display: flex;
     align-items: center;
 }
@@ -246,20 +289,25 @@
 .opciones1 .contenido_opcion1,
 .opciones2 .contenido_opcion2,
 .opciones3 .contenido_opcion3,
-.opciones3 .contenido_opcion4{
+.opciones3 .contenido_opcion4,
+.opciones_bajoPrecio .contenido_opcion_bajoPrecio,
+.opciones_superficie .contenido_opcion_superficie{
     padding: 15px;
 }
 
 .opciones1 .contenido_opcion1:hover,
 .opciones2 .contenido_opcion2:hover,
-.opciones3 .contenido_opcion3:hover{
+.opciones3 .contenido_opcion3:hover,
+.opciones_bajoPrecio .contenido_opcion_bajoPrecio:hover{
     background-color: rgb(230, 230, 230)   
 }
 
 .contenido_select1>p,
 .contenido_select2>p,
 .contenido_select3>p,
-.contenido_select4>p{
+.contenido_select4>p,
+.contenido_bajoPrecio>p,
+.contenido_superficie>p{
     color: rgba(0, 0, 0, 0.466);
 
 }
@@ -267,7 +315,8 @@
 .opciones1>a,
 .opciones2>a,
 .opciones3>a,
-.opciones4>a{
+.opciones4>a,
+.opcion_bajoPrecio{
     text-decoration: none;
     color: black;
     font-size: 12px;
@@ -291,9 +340,124 @@
     }
 }
 
+/*Contenido de la lista 4*/
+.contenido_opcion4,
+.contenido_opcion_superficie{
+    display: grid;
+}
+
+.contenido_opcion_superficie>fieldset>div,
+.contenido_opcion_superficie>fieldset>.uno,
+.contenido_opcion_superficie>fieldset>.uno>label{
+    display: flex;
+
+}
+
+.contenido_opcion_superficie>fieldset>.uno>label{
+    width: 40%;
+}
+
+.contenido_opcion_superficie>fieldset>.dos>label>input{
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.contenido_opcion4>fieldset,
+.contenido_opcion_superficie>fieldset>div>.dos{
+    display: flex;
+}
+
+.contenido_opcion4>fieldset>label>input,
+.contenido_opcion_superficie>fieldset>label>input{
+    width: 58%;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contenido_opcion4>div>button,
+.contenido_opcion_superficie>div>button{
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #f50;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 85, 0, 0.89);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Formulario segundario*/
+
+.from_secundario>div{
+    padding-bottom: 30px;
+}
+
+.from_secundario>h4{
+    font-size: 13px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+fieldset{
+    border: none;
+}
+
+.from_secundario>div>fieldset>label{
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    margin-top : 15px;
+    font-size: 13px;
+    color: rgb(99, 99, 99);
+
+}
+
+
 /*=============================================================================================================================*/
 /*SECCION INFO PROPIEDADES*/
 /*Raquel*/
+
+.titulo_seccion{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.titulo_seccion>h3{
+    padding-right: 8%;
+}
+
+.checkbox_seccion{
+    align-items: center;
+    display: flex;
+    background-color: #cbd6dc;
+    border-radius: 25px;
+    padding-right: 15px;
+    justify-content: center;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.checkbox_seccion>i{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.checkbox_seccion>div{
+    background-color: #f50;
+    padding: 10px;
+    border-radius: 25px;
+    color: whitesmoke;
+}
+
 .articulo {
     border: 1px solid #cbd6dc;
     border-radius: 12px;
@@ -479,4 +643,114 @@
 .deslizar-btn-izq {
     left: 10px;
 }
+
+/*Pie de articulos*/
+.pie_articulo{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pie_articulo>i{
+    color: #f50;
+}
+
+.pie_articulo>a{
+    text-decoration: none;
+}
+
+.pie_articulo>div>a{
+    display: flex;
+    text-decoration: none;
+    padding-left: 10px;
+    color: gray;
+}
+
+.pie_articulo>div>a>i{
+    padding: 0 10px;
+    color: black;
+}
+
+.pie_articulo>div>a:hover{
+    color: #f50;
+}
+
 /*=============================================================================================================================*/
+
+.botones_pie_pagina,
+.botones_pie_pagina>div{
+    display: flex;
+    justify-content: center;
+}
+
+.botones_pie_pagina{
+    margin: 40px;
+}
+
+.botones_pie_pagina>button,
+.botones_pie_pagina>div>button{
+    padding: 16px 20px;
+    border-radius: 30px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.botones_pie_pagina>button{
+    border: 1px solid gray;
+}
+
+.botones_pie_pagina>button:hover,
+.botones_pie_pagina>div>button:hover,
+.botones_pie_pagina>button:focus,
+.botones_pie_pagina>div>button:focus{
+    border: 1px solid tomato;
+}
+
+div>.botones_baños,
+div>.botones_estacionamientos{
+    margin-top: 15px;
+}
+
+.botones_baños{
+    display: flex;
+    margin: 0 6%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.botones_estacionamientos{
+    display: flex;
+    margin: 0 3.3%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.botones_baños>button,
+.botones_estacionamientos>button{
+    padding: 7%;
+    border: none;
+    margin: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.botones_baños>button:hover,
+.botones_baños>button:focus,
+.botones_estacionamientos>button:hover,
+.botones_estacionamientos>button:focus{
+    background-color: #f50;
+    color: white;
+}
+
+.btn_baños1,
+.btn_estacionamientos1{
+    border-radius: 9px 0 0 9px;
+}
+
+.btn_baños2{
+    border-radius: 0 9px 9px 0;
+}
