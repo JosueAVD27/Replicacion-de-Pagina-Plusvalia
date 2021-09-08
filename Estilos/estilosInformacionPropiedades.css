@@ -4,6 +4,62 @@
     padding: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+/*=============================================================================================================================*/
+/*Main*/
+
+.main_x{
+    display: block;
+    margin: 10px;
+}
+
+.main_x>div{
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imag1>img{
+    width: auto;
+    height: 500px;
+    border-radius: 10px 0 0 10px;
+}
+
+.imag3>img{
+    border-radius: 0 10px 0 0;
+}
+
+.imag5>img{
+    border-radius: 0 0 10px 0;
+}
+
+.imag2>img,
+.imag3>img,
+.imag4>img,
+.imag5>img{
+    width: auto;
+    height: 238px;
+}
+
+
+/*responsive*/
+@media screen and (min-width: 1400px){
+    .main_x{
+        margin: 10px;
+    }
+    .imag1>img{
+        width: 700px;
+        height: 500px;
+    }
+
+    .imag2>img,
+    .imag3>img,
+    .imag4>img,
+    .imag5>img{
+    width: 350px;
+    height: 238px;
+    }
+}
+/*=============================================================================================================================*/
 /*Landa*/
 .cont-menu {
     max-width: 40rem;
@@ -191,3 +247,4 @@
     color: black;
     background-color: rgb(124, 198, 228);
 }
+
