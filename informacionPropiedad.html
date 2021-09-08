@@ -98,9 +98,98 @@
     </main>
     <!--=============================================================================================================================-->
     <!--Raquel-->
-    <aside>
+    <aside class="fondocaja">
 
-    </aside>
+        <!--Iconos-->
+       <div class="iconos_form">
+           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <circle cx="6" cy="12" r="3" />
+               <circle cx="18" cy="6" r="3" />
+               <circle cx="18" cy="18" r="3" />
+               <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+               <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+           </svg>
+       </div>
+       <div class="iconos_form">
+           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+             </svg>
+       </div>
+
+           <!--Precios-->
+       <div class="precio_condominios">
+                   <div class= minititulos><b>Venta</b> </div>
+                       <b>USD 800.000</b>
+                        <br>
+                       + USD 500 Condominio/Alicuota
+                   <div class= minititulos><b>Alquiler</b></div>
+                       <b>USD 4.500</b>
+                       <br>
+                       + USD 500 Condominio/Alicuota
+                  
+                   <div class= minititulos><b>Temporal/Vacacional</b></div>
+                       <b>USD 400</b>
+                       <br>
+                       +USD 500 Condominio/Alicuota
+       </div>
+
+       <!--Linea de división-->
+       <div class="division_linea"></div>
+       <!--Para ingresar los datos del formulario -->
+       <div id="formulario">
+           <form class="datos_form">
+               <h3 class="titulo_form">Mensaje al anunciante</h3>
+               <!--Ingresar el correo-->
+               <div class="datos_mensaje">
+                   <div class="ingreso_datos">
+                       <input id="input-email" type="text" name="email" inputmode="text" placeholder="Email" class="data" value="">
+                   </div> 
+               </div>
+               <!--Casillas de nombre y telefono-->
+               <div class="nombre_tlf">
+                   <div class="ingreso_datos">
+                       <input id="input-name" type="text" name="name" inputmode="text" placeholder="Nombre" class="data" value="">
+                   </div>
+                   <div class="ingreso_datos">
+                       <input id="input-phone" type="tel" name="phone" inputmode="text" placeholder="Teléfono" class="data" value="">
+                   </div>
+               </div>
+               <!--Casilla del mensaje-->
+               <div class="datos_mensaje">
+                   <div class="ingreso_datos">
+                       <label for="input-message" class="titulo-mensaje">Mensaje</label>
+                       <textarea id="input-message" type="text" name="message" inputmode="text" height="100" 
+                       class="contenido_msj">Hola, me interesa este inmueble que vi en plusvalía y quiero que me contacten. Gracias.</textarea>
+                   </div>
+               </div>
+              <!--Casilla para seleccionar-->
+               <div class="marcar_casilla">
+                   <label><input type="checkbox" id="cbox1" value="first_checkbox"> Quiero que me llamen</label><br>
+               </div>
+
+               <div class="enviarfor">
+                   <!--Boton de enviar formulario-->
+                   <button width="100%" font-weight="bold" class="presionar" style="margin-bottom: 8px;">Enviar formulario</button>
+                   <button width="100%" font-weight="bold" class="presionar" style="background-color: rgb(15, 153, 15);">
+                       Contactar por WhatsApp
+                       <img class="icono_wsp"
+                           src="https://img10.naventcdn.com/ficha/RPFICv5.13.2-RC1/whatsappIcon.26fa6c.svg">
+                   </button>
+                  
+               </div>
+               <!--Términos y condiciones y Políticas-->
+               <span class="termi_politic">Al enviar estás aceptando los
+                   <a href="http://help.plusvalia.com/es/articles/3512910-terminos-y-condiciones-de-uso">
+                       Términos y condiciones de Uso</a>
+                   <a href="http://help.plusvalia.com/es/articles/3512912-politica-de-privacidad">
+                       y la Política de Privacidad</a>
+               </span>
+           </form>
+       </div>
+
+   </aside>
     <!--=============================================================================================================================-->
     <section class="seccion1">
 
