@@ -248,3 +248,199 @@
     background-color: rgb(124, 198, 228);
 }
 
+/*Raquel*/
+
+.fondocaja{
+    background: rgb(214, 235, 238);
+    width: 28%;
+    height: auto;/***/
+    text-align: center;
+    float: right;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.iconos_form{
+    float: right;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #212121;
+}
+
+.precios_condominios {
+    box-sizing: border-box;
+    padding: 15px 24px;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: 13px;
+}
+
+.division_linea {
+    border-bottom: 1px solid rgb(187, 202, 212);
+    width: 90%;
+    display: flex;
+    margin: auto;
+    z-index: 1;
+    top: 4px;
+    position: relative;
+}
+
+.formulario {
+    background-color: lightgray;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+.datos_form {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.titulo_form {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.datos_mensaje {
+    margin: 8px 0px;
+}
+
+.data {
+    position: relative;
+}
+
+.data {
+    border: 1px solid rgb(187, 202, 212);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px;
+    height: 48px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    outline: none;
+    transition: padding-top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    animation: 0s ease 0s 1 normal none running none !important;
+}
+
+.data:focus, .contenido_msj:focus {
+    border: 1px solid rgb(255, 85, 0);
+}
+
+.nombre_tlf {
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre_tlf {
+    margin-right: 4px;
+}
+
+.contenido_msj {
+    border: 1px solid rgb(187, 202, 212);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-weight: 300;
+    padding: 30px 12px 12px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    outline: none;
+    transition: padding-top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    font-size: 14px;
+    resize: none;
+    line-height: 20px;
+    height: 100px;
+    animation: 0s ease 0s 1 normal none running none !important;
+}
+
+.marcar_casilla {
+    width: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 25px;
+}
+
+.titulo-mensaje {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    font-weight: 500;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: rgb(147, 150, 151);
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    font-size: 12px;
+    transform: translateY(-10px);
+    animation: 0s ease 0s 1 normal none running none;
+}
+
+.enviarfor {
+    margin: 20px 0px 10px;
+}
+
+.presionar {
+    display: flex;
+    border-radius: 12px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+    line-height: 48px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.icono_wsp {
+    margin-left: 10px;
+}
+
+.termi_politic {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.termi_politic>a {
+    color: orange;
+}
