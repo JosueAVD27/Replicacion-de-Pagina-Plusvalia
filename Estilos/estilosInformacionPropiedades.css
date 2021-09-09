@@ -22,6 +22,7 @@
     width: auto;
     height: 500px;
     border-radius: 10px 0 0 10px;
+    cursor: pointer;
 }
 
 .imag3>img{
@@ -38,8 +39,64 @@
 .imag5>img{
     width: auto;
     height: 238px;
+    cursor: pointer;
 }
 
+
+.main_btnX{
+    position: absolute;
+    top: 81%;
+    right: 3%;
+}
+
+.main_btnX>button{
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 115px;
+    font-weight: bold;
+}
+
+.main_btnX .btn1{
+    color: white;
+}
+
+.main_btnX .btn1:hover{
+    background-color: white;
+    color: black;
+}
+
+.main_btnX .btn2{
+    background-color: white;
+}
+
+.main_btnX .btn2:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.main_btnCam{
+    position: absolute;
+    top: 86%;
+    left: 5%;
+}
+
+.main_btnCam>button{
+    margin: 0 10px;
+    padding: 15px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 80px;
+    font-weight: bold;
+    color: gray;
+    background-color: white;
+}
+
+.main_btnCam>button:hover{
+    border: 2px solid lightgrey;
+    background-color: lightgrey;
+}
 
 /*responsive*/
 @media screen and (min-width: 1400px){
@@ -58,7 +115,97 @@
     width: 350px;
     height: 238px;
     }
+
+    .main_btnX{
+        top: 71%;
+        right: 3%;
+    }
+
+    .main_btnCam{
+        position: absolute;
+        top: 74%;
+        left: 5%;
+    }
 }
+
+/*Pie de articulos*/
+.pie_articulo{
+    margin-top: 540px;
+    margin-left: 30px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pie_articulo .solo{
+    color: #f50;
+}
+
+.pie_articulo>i{
+    color: gray;
+    padding: 0 10px;
+}
+
+.pie_articulo>a{
+    text-decoration: none;
+    font-size: 13px;
+    color: gray;
+}
+
+.pie_articulo>div>a{
+    display: flex;
+    text-decoration: none;
+    padding-left: 10px;
+    color: gray;
+}
+
+.pie_articulo>div>a>i{
+    padding: 0 10px;
+    color: black;
+}
+
+.pie_articulo>div>a:hover{
+    color: #f50;
+}
+
+.ojo{
+    display: grid;
+    margin-left: 30px;
+}
+
+.ojo>div{
+    display: flex;
+    align-items: center;
+}
+
+.icono_ojo{
+    font-size: 50px;
+    color: rgba(116, 0, 224, 0.521);
+    margin-right: 10px;
+    margin: 10px;
+}
+
+.TituloX{
+    display: grid;
+    margin-left: 30px;
+}
+
+.TituloX>h2,
+.TituloX>p{
+    padding: 10px;
+}
+
+.TituloX>div{
+    display: flex;
+    padding: 10px 0;
+    font-size: 13px;
+    color: gray;
+}
+
+.TituloX>div>i{
+    padding: 0 10px;
+}
+
 /*=============================================================================================================================*/
 /*Landa*/
 .cont-menu {
