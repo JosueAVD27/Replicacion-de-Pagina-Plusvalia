@@ -45,3 +45,4 @@ function mostrarInformacion(){
   label_informacion.style.display = "none";
   label_informacion_menos.style.display = "block";
 }
+
