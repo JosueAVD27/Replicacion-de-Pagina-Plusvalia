@@ -206,6 +206,72 @@
     padding: 0 10px;
 }
 
+/*Seccion 1*/
+.seccion1{
+    margin-left: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+}
+
+.seccion1>div>h4{
+    color: gray;
+    padding: 10px 20px 0 0;
+}
+
+.seccion1>div>div>h3{
+    padding: 10px 0;
+}
+
+.seccion1>div>div>p{
+    padding: 10px 0;
+}
+
+.seccion1>div>div>div>p{
+    padding: 5px 0;
+}
+
+.seccion1>div>div>label{
+    color: #f50;
+    font-weight: bold;
+}
+
+/*Configuracion tipo lista*/
+/* Ocultar botón radio */
+#informacion[id^="informacion"]{
+    display: none;
+}
+
+/* Estilo botón clicable */
+#informacion[id^="informacion"]+.label_informacion{
+    width: 80%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Estilo botón cuando su INPUT está seleccionado */
+#informacion[id^="informacion"]:checked+.label_informacion{
+    display: block;
+}
+
+/*Ocultar ver menos*/
+.label_informacion_menos{
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilo caja SPOILER (inicialmente oculto) */
+#informacion[id^="informacion"]~.informacion{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+#informacion[id^="informacion"]:checked+.label_informacion+.informacion{
+    height: auto;
+    opacity: 1;
+}
+
 /*=============================================================================================================================*/
 /*Landa*/
 .cont-menu {
@@ -285,10 +351,62 @@
     text-align: left;
     width: 100%; 
 }
+
+/*=============================================================================================================================*/
+/*Seccion 3*/
+.seccion3{
+    display: block;
+    margin-left: 30px;
+}
+
+.seccion3>div{
+    display: block;
+}
+
+.seccion3>div>div{
+    display: flex;
+}
+
+.seccion3>div>div>div{
+    display: flex;
+    align-items: center;
+}
+
+.seccion3>div>div>div>h1{
+    font-size: 40px;
+}
+
+.seccion3>div>div>div>p{
+    padding: 15px;
+    width: 320px;
+    margin: 15px;
+    border: 1px solid thistle;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/*=============================================================================================================================*/
+/*Anunciante*/
+.anunciante{
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+.anunciante>h5,
+.anunciante>p{
+    margin: 15px 0;
+}
+
+.anunciante>.x{
+    color: rgb(124, 156, 167);
+}
+
 /*=============================================================================================================================*/
 /*Daniela*/
 .desplegar{
     padding: 10px 15px;
+    display: block;
 }
 /*textos*/
 .desplegar h4{
@@ -337,8 +455,8 @@
 }
 /*Contenedor*/
 .carousel_lista{
-    display: flex;
-    overflow: hidden;
+    display: block;
+    position: absolute;
     padding: auto;
 }
 .carousel .carousel_contenedor .carousel_lista .carousel_elemento{
@@ -349,14 +467,15 @@
 }
 
 .logo{
-    width: 350px; height: 250px;
+    width: 3500px; 
+    height: 250px;
     border-radius: 20px 20px 0px 0px;
     padding: auto;
     border-bottom: 1px #7c98a7 solid;
 }
 /*Botones*/
 .carousel_anterior{
-    transform: translateY(1400%);
+    transform: translateY(500%);
     position: absolute;
     z-index: 50;
     color: rgb(196, 21, 21);
@@ -366,8 +485,7 @@
     border: 1px solid #a31414;
     font-size: 100%;
     background-color: rgb(253, 253, 253);
-    top: 1px;
-    right: 1268px;
+    left: 18px;
     cursor: pointer;
 }
 .carousel_anterior:hover {
@@ -376,7 +494,7 @@
     background-color: rgb(124, 198, 228);
 }
 .carousel_siguiente{
-    transform: translateY(890%);
+    transform: translateY(-660%);
     position: absolute;
     color: rgb(196, 21, 21);
     width: 40px;
@@ -385,7 +503,6 @@
     border: 1px solid #a31414;
     font-size: 100%;
     background-color: #fff;
-    top: 190px;
     right: 15px;
     cursor: pointer;
 }

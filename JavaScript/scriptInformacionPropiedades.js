@@ -28,3 +28,20 @@ window.addEventListener('load', function(){
         }
       });
 });
+
+/*Seccion 1*/
+document.getElementById("btn_informacion_menos").addEventListener("click", ocultarInformacion);
+document.getElementById("btn_informacion").addEventListener("click", mostrarInformacion);
+
+var label_informacion = document.querySelector(".label_informacion");
+var label_informacion_menos = document.querySelector(".label_informacion_menos");
+
+function ocultarInformacion(){
+  label_informacion.style.display = "block";
+  label_informacion_menos.style.display = "none";
+}
+
+function mostrarInformacion(){
+  label_informacion.style.display = "none";
+  label_informacion_menos.style.display = "block";
+}
