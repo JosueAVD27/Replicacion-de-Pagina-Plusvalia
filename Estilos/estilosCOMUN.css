@@ -3,8 +3,7 @@
 /*SECCION HEADER*/
 /*LANDA*/
 .encabezado {
-    background-color: #39adb6;
-
+    background-image: url('../Imagenes/General/MENU.jpg');
 }
 
 .encabezado nav {
@@ -78,7 +77,7 @@
 
 .encabezado nav ul li ul {
     position: absolute;
-    background: #39adb6;
+    background: #424242;
 }
 
 .encabezado nav ul li ul {
@@ -107,7 +106,7 @@
     border-radius: 8px;
     padding: 10px 15px;
     margin-left: 10px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.973);
 }
 
 .btn-publicar {

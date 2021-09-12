@@ -25,6 +25,15 @@
     cursor: pointer;
 }
 
+.imag1:hover,
+.imag2:hover,
+.imag3:hover,
+.imag4:hover,
+.imag5:hover{
+    -webkit-filter: brightness(70%);
+    filter: brightness(80%);
+}
+
 .imag3>img{
     border-radius: 0 10px 0 0;
 }
@@ -91,6 +100,7 @@
     font-weight: bold;
     color: gray;
     background-color: white;
+    box-shadow: 0 0 0.9em 0 #000000;
 }
 
 .main_btnCam>button:hover{
@@ -125,6 +135,10 @@
         position: absolute;
         top: 74%;
         left: 5%;
+    }
+
+    #map>iframe{
+        width: 148%;
     }
 }
 
@@ -275,8 +289,8 @@
 /*=============================================================================================================================*/
 /*Landa*/
 .cont-menu {
-    max-width: 40rem;
-    padding:2rem; 
+    padding:2rem;
+    width: 62%;
 }
 
 .cont-menu .cont-enlace{
@@ -293,6 +307,7 @@
     font-size: 22px;
     cursor: pointer;
     user-select: none;
+    border-radius: 20px;
 }
 
 /* Estilos para el simbolo '+' */
@@ -332,30 +347,41 @@
 }
 /*tablas del menu acordeon*/
 .primero{
-    background-color: white;
+    background-color: #ffffff;
+    padding: 10px;
     text-align: left;
     width: 100%;
+    padding-left: 30px;
 }
 .segundo{
     background-color: white;
+    padding: 10px;
     text-align: left;
     width: 100%;
+    padding-left: 30px;
 }
 .tercero{
     background-color: white;
+    padding: 10px;
     text-align: left;
     width: 100%;
+    padding-left: 30px;
 }
 .cuarto{
     background-color: white;
+    padding: 10px;
     text-align: left;
-    width: 100%; 
+    width: 100%;
+    padding-left: 30px;
 }
+
+/*=============================================================================================================================*/
 /*Mapas*/
 .seccion2{
     max-width: 40rem;
     padding:2rem; 
 }
+
 
 
 /*=============================================================================================================================*/
@@ -547,10 +573,21 @@
 .precios_condominios {
     box-sizing: border-box;
     padding: 15px 24px;
-    justify-content: center;
     border-radius: 20px 20px 0 0;
     position: relative;
     top: 13px;
+}
+
+.precio_condominios{
+    text-align: left;
+}
+
+.precio_condominios>div{
+    padding: 15px;
+}
+
+.precio_condominios>div>b{
+    padding: 5px 0;
 }
 
 .division_linea {
