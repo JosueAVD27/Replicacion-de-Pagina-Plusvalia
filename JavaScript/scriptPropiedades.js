@@ -226,6 +226,96 @@ function deslizarIzquierda5() {
     }, 500);
 }
 
+/*Seccion 6*/
+const btnIzquierdo6 = document.querySelector("#btn-izquierda6");
+const btnDerecha6 = document.querySelector("#btn-derecha6");
+
+const slider6 = document.querySelector("#deslizar6");
+let sliderSection6 = document.querySelectorAll(".deslizar-section6");
+
+let sliderSectionLast6 = sliderSection6[sliderSection6.length -1];
+
+slider6.insertAdjacentElement("afterbegin", sliderSectionLast6);
+
+//Botones 
+btnDerecha6.addEventListener("click", function() {
+    deslizarDerecha6();
+});
+
+btnIzquierdo6.addEventListener("click", function() {
+    deslizarIzquierda6();
+});
+
+//Funcion para deslizar las imganes hacia la derecha
+function deslizarDerecha6() {
+    let sliderSectionFirst6 = document.querySelectorAll(".deslizar-section6")[0];
+    slider6.style.marginLeft = "-200%";
+    slider6.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider6.style.transition = "none";
+        slider6.insertAdjacentElement("beforeend", sliderSectionFirst6);
+        slider6.style.marginLeft = "-100%";
+    }, 500);
+}
+
+//Funcion para deslizar las imganes hacia la izquierda
+function deslizarIzquierda6() {
+    let sliderSection6 = document.querySelectorAll(".deslizar-section6");
+    let sliderSectionLast6 = sliderSection6[sliderSection6.length -1];
+    slider6.style.marginLeft = "0";
+    slider6.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider6.style.transition = "none";
+        slider6.insertAdjacentElement("afterbegin", sliderSectionLast6);
+        slider6.style.marginLeft = "-100%";
+    }, 500);
+}
+
+/*Seccion 7*/
+const btnIzquierdo7 = document.querySelector("#btn-izquierda7");
+const btnDerecha7 = document.querySelector("#btn-derecha7");
+
+const slider7 = document.querySelector("#deslizar7");
+let sliderSection7 = document.querySelectorAll(".deslizar-section7");
+
+let sliderSectionLast7 = sliderSection7[sliderSection7.length -1];
+
+slider7.insertAdjacentElement("afterbegin", sliderSectionLast7);
+
+//Botones 
+btnDerecha7.addEventListener("click", function() {
+    deslizarDerecha7();
+});
+
+btnIzquierdo7.addEventListener("click", function() {
+    deslizarIzquierda7();
+});
+
+//Funcion para deslizar las imganes hacia la derecha
+function deslizarDerecha7() {
+    let sliderSectionFirst7 = document.querySelectorAll(".deslizar-section7")[0];
+    slider7.style.marginLeft = "-200%";
+    slider7.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider7.style.transition = "none";
+        slider7.insertAdjacentElement("beforeend", sliderSectionFirst7);
+        slider7.style.marginLeft = "-100%";
+    }, 500);
+}
+
+//Funcion para deslizar las imganes hacia la izquierda
+function deslizarIzquierda7() {
+    let sliderSection7 = document.querySelectorAll(".deslizar-section7");
+    let sliderSectionLast7 = sliderSection7[sliderSection7.length -1];
+    slider7.style.marginLeft = "0";
+    slider7.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider7.style.transition = "none";
+        slider7.insertAdjacentElement("afterbegin", sliderSectionLast7);
+        slider7.style.marginLeft = "-100%";
+    }, 500);
+}
+
 //funciones para la lista desplegable
 
 //Lista Bajo precio
